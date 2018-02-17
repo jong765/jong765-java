@@ -1,0 +1,8 @@
+Creating thread by implementing Runnable interface
+1.  Let your class implement “Runnable” interface.
+2.  Now override the “public void run()” method and write your logic there (This is the method which will be 
+    executed when this thread is started).
+That’s it, now you can start this thread as given below
+1.  Create an object of the above class
+2.  Allocate a thread object for our thread
+3.  Call the method “start” on the allocated thread object.

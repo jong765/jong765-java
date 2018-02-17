@@ -1,0 +1,35 @@
+/***** @Entity, @Id *****/
+@Entity declares the class as an entity (i.e. a persistent POJO class), @Id declares the identifier property of this entity.
+
+
+/***** PrimaryKeyJoinColumn *****/
+The @PrimaryKeyJoinColumn and @PrimaryKeyJoinColumns annotations define the primary key(s) of the joined subclass table:
+
+
+/***** FetchType *****/
+FetchType.LAZY = Doesn’t load the relationships unless explicitly “asked for” via getter
+FetchType.EAGER = Loads ALL relationships
+
+
+/***** MappedBy *****/
+Using "mappedBy" attribute of mapping annotations(like @OneToOne, @OneToMany, @ManyToMany) for bi-directional relationship. 
+This attribute allows you to refer the associated entities from both sides. If "X" has association with "Y" then you can get X from Y and Y from X.
+
+For example, If you have "Book" entity and "Author" entity those are associated to each other in the way that Book has a Author and Author associated with a Book.
+Now if you retrieve the Book Object from hibernate session, then you can get the Author entity from Book entity. 
+Or if you get the Author entity then you can get the Book entity from Author entity.
+So you require the bidirectional navigation relationships between Book and Author entities. 
+
+This is achieved in the Hibernate using the  @OneToOne relationship provided that child entity must have property type of parent and 
+marked with annotation @OneToOne(mappedBy="parent") where parent is the Owner entity of this child entity.
+
+
+/***** Cascade Types *****/
+The cascade types supported by the Java Persistence Architecture are as below:
+
+CascadeType.PERSIST : means that save() or persist() operations cascade to related entities.
+CascadeType.MERGE : means that related entities are merged into managed state when the owning entity is merged.
+CascadeType.REFRESH : does the same thing for the refresh() operation.
+CascadeType.REMOVE : removes all related entities association with this setting when the owning entity is deleted.
+CascadeType.DETACH : detaches all related entities if a “manual detach” occurs.
+CascadeType.ALL : is shorthand for all of the above cascade operations.

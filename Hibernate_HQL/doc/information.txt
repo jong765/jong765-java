@@ -1,0 +1,21 @@
+*******HQL Insert Query*******
+
+In HQL, only the INSERT INTO … SELECT … is supported; there is no INSERT INTO … VALUES. 
+HQL only support insert from another table. For example
+
+"insert into Object (id, name) select oo.id, oo.name from OtherObject oo";
+Insert a stock record from another backup_stock table. This can also called bulk-insert statement.
+
+Query query = session.createQuery("insert into Stock(stock_code, stock_name)" +
+    			"select stock_code, stock_name from backup_stock");
+int result = query.executeUpdate();
+The query.executeUpdate() will return how many number of record has been inserted, updated or delete
+
+*******HQL and Query object*******
+https://www.youtube.com/watch?v=Em4M2tUn1bU
+
+*******mappedBy*******
+https://www.youtube.com/watch?v=TanXgmG6ZuU
+
+*******cascadeType,fetchType*******
+https://www.youtube.com/watch?v=019nGJGd9JM

@@ -1,0 +1,9 @@
+Parameterized tests:
+
+The custom runner Parameterized implements parameterized tests.
+When running a parameterized test class, instances are created for the cross-product of 
+the test methods and the test data elements.
+
+The number of elements in each array provided by the method annotated with @Parameters 
+must correspond to the number of parameters in the constructor of the class. 
+The class is created for each parameter and the test values are passed via the constructor to the class.

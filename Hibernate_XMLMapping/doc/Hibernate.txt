@@ -1,0 +1,17 @@
+save
+Save method stores an object into the database. 
+That means it inserts an entry if the identifier doesn’t exist, else it will throw error. 
+If the primary key already present in the table, it cannot be inserted.
+
+update
+Update method in the hibernate is used for updating the object using identifier.
+If the identifier is missing or doesn’t exist, it will throw exception.
+
+saveOrUpdate
+This method calls save() or update() based on the operation.
+If the identifier exists, it will call update method else the save method will be called.
+saveOrUpdate() method does the following:
+ >If the object is already persistent in the current session, it does nothing
+ >If another object associated with the session has the same identifier, throw an exception to the caller
+ >If the object has no identifier property, save() the object
+ >If the object’s identifier has the value assigned to a newly instantiated object, save() the object

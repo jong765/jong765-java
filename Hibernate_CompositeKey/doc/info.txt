@@ -1,0 +1,2 @@
+https://www.youtube.com/watch?v=YDxTQUVkujs
+http://mprabhat.com/2012/07/16/jpa-hibernate-embeddable-primary-key/
