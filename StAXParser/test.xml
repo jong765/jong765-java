@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<product product-id="3343423">
+		<upc>12345</upc>
+		<name>Tank top black</name>
+		<custom-attribute id="1"/>
+	</product>
+	<category-assignment category-id="young-reckless-mens-tees"
+		product-id="0098201220295-1" />
+</catalog>

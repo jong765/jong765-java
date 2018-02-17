@@ -1,0 +1,27 @@
+********TreeMap********
+The TreeMap class implements the Map interface by using a tree. 
+A TreeMap provides an efficient means of storing key/value pairs in sorted order, and allows rapid retrieval.
+You should note that, unlike a hash map, a tree map guarantees that its elements will be sorted in 
+ascending key order.
+
+The TreeMap class supports four constructors. 
+
+The first form constructs an empty tree map that will be sorted by using the natural order of its keys:
+TreeMap( )
+
+The second form constructs an empty tree-based map that will be sorted by using the Comparator comp:
+TreeMap(Comparator comp)
+
+The third form initializes a tree map with the entries from m, which will be sorted by using the natural order of the keys:
+TreeMap(Map m)
+
+The fourth form initializes a tree map with the entries from sm, which will be sorted in the same order as sm:
+TreeMap(SortedMap sm)
+
+
+********entrySet()*******
+The entrySet() method is used to get a Set view of the mappings contained in this map.
+
+Following is the declaration for java.util.HashMap.entrySet() method.
+
+public Set<Map.Entry<K,V>> entrySet()

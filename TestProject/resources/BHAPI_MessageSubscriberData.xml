@@ -1,0 +1,6 @@
+<methodCall>
+<methodName>statistics.getMessageSubscriberData</methodName>
+   <mess_id><![CDATA[@LM{message_id}]]></mess_id>
+   <start_date><![CDATA[@LM{start_date}]]></start_date>
+   <end_date><![CDATA[@LM{end_date}]]></end_date>
+</methodCall>

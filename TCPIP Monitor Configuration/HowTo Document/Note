@@ -1,0 +1,10 @@
+Add TCPIP Monitor:
+	Windows>Preferences
+		Under Run/Debug, Select TCP/IP Monitor and add monitor with the following setup:
+			1) Local monitoring port = 9833
+			2) hostname = localhost
+			3) port = 8080
+			4) type = TCP/IP
+
+Change your webservice endpoint url to use port 9833
+	http://localhost:9833/XXXXX

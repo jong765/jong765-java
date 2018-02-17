@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- Spring List Property Example -->
+	<bean id="studentBean" class="collection.list.example.StudentBean">
+		<property name="name" value="satya" />
+		<property name="address" value="Delhi" />
+	</bean>
+
+	<bean id="collegeBean" class="collection.list.example.CollegeBean">
+		<property name="lists">
+			<list>
+				<value>1</value>
+				<ref bean="studentBean" />
+				<bean class="collection.list.example.StudentBean">
+					<property name="name" value="ankit" />
+					<property name="address" value="delhi" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- Spring Map Property Example -->
+	<bean id="collegeBean2" class="collection.map.example.CollegeBean">
+		<property name="maps">
+			<map>
+				<entry key="Key 1" value="1" />
+				<entry key="Key 2" value-ref="studentBean2" />
+				<entry key="Key 3">
+					<bean class="collection.map.example.StudentBean">
+						<property name="name" value="satya" />
+						<property name="address" value="patna" />
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="studentBean2" class="collection.map.example.StudentBean">
+		<property name="name" value="suraj" />
+		<property name="address" value="pune" />
+	</bean>
+
+
+	<!-- Spring Collection Merging -->
+	<bean id="parent" abstract="true" class="collection.merge.example.CollegeBean">
+		<property name="pros">
+			<props>
+				<prop key="Year">25</prop>
+				<prop key="NickName">Raj</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="child" parent="parent">
+		<property name="pros">
+			<props merge="true">
+				<prop key="Roll">101</prop>
+				<prop key="Name">Rohit Raj</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- Spring Props -->
+	<bean id="collegeBean3" class="collection.props.example.CollegeBean">
+		<property name="pros">
+			<props>
+				<prop key="roll">100</prop>
+				<prop key="name">satya</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- Spring Set Property Example -->
+	<bean id="studentBean1" class="collection.set.example.StudentBean">
+		<property name="name" value="satya" />
+		<property name="address" value="Delhi" />
+	</bean>
+
+	<bean id="collegeBean1" class="collection.set.example.CollegeBean">
+		<property name="sets">
+			<list>
+				<value>1</value>
+				<ref bean="studentBean1" />
+				<bean class="collection.set.example.StudentBean">
+					<property name="name" value="ankit" />
+					<property name="address" value="delhi" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- The idref element -->
+	<bean id="first" class="idref.example.FirstBean">
+		<property name="message" value="Spring is simple." />
+	</bean>
+	<bean id="another" class="idref.example.AnotherBean">
+		<property name="amessage">
+			<idref bean="first" />
+		</property>
+	</bean>
+
+
+	<!-- Spring Map Example -->
+	<bean id="mapbean" class="spring.map.example.MapBean">
+		<property name="details">
+			<map>
+				<entry key="Satya" value="101" />
+				<entry key="Rohit" value="102" />
+				<entry key="Aniket" value="103" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- Spring Null Value -->
+	<bean id="basic" class="spring.nullvalue.example.NullBean">
+		<property name="message">
+			<null />
+		</property>
+	</bean>
+
+</beans>

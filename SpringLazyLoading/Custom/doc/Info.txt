@@ -1,0 +1,7 @@
+Spring Lazy Initialization
+
+In general all bean are initialized at startup. 
+To stop such unnecessary initialization we use lazy initialization 
+which create the bean instance when it is first requested
+
+The lazy-init attribute are defined in the xml file at the <bean/> element.
