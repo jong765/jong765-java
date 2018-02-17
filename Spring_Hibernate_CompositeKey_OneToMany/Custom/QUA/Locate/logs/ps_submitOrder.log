@@ -1,0 +1,3 @@
+Jul 28 2016 10:32:29,122 [Thread1]  INFO - Locate submit order process has started.
+Jul 28 2016 10:32:30,745 [Thread1] ERROR - Error: OrderId=44091717, PickTicketCode=PCK, FulfillmentLocation=1061      
+Jul 28 2016 10:32:30,745 [Thread1]  INFO - Locate submit order process has completed. 0 order(s) have processed. 0 error(s) occurred.

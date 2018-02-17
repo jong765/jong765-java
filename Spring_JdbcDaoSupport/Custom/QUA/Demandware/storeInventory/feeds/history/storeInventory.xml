@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<inventory xmlns="http://www.demandware.com/xml/impex/inventory/2007-05-31">
+    <inventory-list>
+        <header list-id="storeInventory">
+            <default-instock>false</default-instock>
+            <description>Pacsun Store Inventory</description>
+        </header>
+        <records>
+            <record product-id="231212">
+                <allocation>99999</allocation>
+                <perpetual>false</perpetual>
+                <preorder-backorder-handling>none</preorder-backorder-handling>
+            </record>
+            <record product-id="11932">
+                <allocation>99999</allocation>
+                <perpetual>false</perpetual>
+                <preorder-backorder-handling>none</preorder-backorder-handling>
+            </record>
+            <record product-id="77534">
+                <allocation>99999</allocation>
+                <perpetual>false</perpetual>
+                <preorder-backorder-handling>none</preorder-backorder-handling>
+            </record>
+            <record product-id="82333">
+                <allocation>99999</allocation>
+                <perpetual>false</perpetual>
+                <preorder-backorder-handling>none</preorder-backorder-handling>
+            </record>
+        </records>
+    </inventory-list>
+</inventory>

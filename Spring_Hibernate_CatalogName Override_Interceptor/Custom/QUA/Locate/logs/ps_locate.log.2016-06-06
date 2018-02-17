@@ -1,0 +1,194 @@
+Jun 06 2016 09:44:28,728 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 09:44:28,744 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 09:44:28,759 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 09:44:28,759 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 09:45:16,947 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 09:45:16,947 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 09:45:16,963 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 09:45:16,963 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 09:45:18,351 [main] ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@d8ee6d] to prepare test instance [com.pacsun.submitorder.service.impl.OpLocateOrderInterfaceServiceImplTest@d5550]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRequestTransactionsBuilder': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: protected com.pacsun.submitorder.dto.CustomerDto com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder.customerDto; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.pacsun.submitorder.dto.CustomerDto] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: protected com.pacsun.submitorder.dto.CustomerDto com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder.customerDto; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.pacsun.submitorder.dto.CustomerDto] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 41 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.pacsun.submitorder.dto.CustomerDto] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 43 more
+Jun 06 2016 09:47:14,075 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 09:47:14,091 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 09:47:14,091 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 09:47:14,091 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 09:48:07,436 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 09:48:07,451 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 09:48:07,467 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 09:48:07,467 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 09:48:08,512 [main]  WARN - SQL Error: -99999, SQLState: 07006
+Jun 06 2016 09:48:08,512 [main] ERROR - Data type mismatch. (empty String)
+Jun 06 2016 09:52:13,872 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 09:52:13,888 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 09:52:13,888 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 09:52:13,888 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 09:52:51,056 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 09:52:51,057 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 09:52:51,057 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 09:52:51,074 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 09:54:03,061 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 09:54:03,076 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 09:54:03,076 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 09:54:03,076 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 09:54:56,932 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 09:54:56,947 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 09:54:56,947 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 09:54:56,963 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 09:56:56,368 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 09:56:56,368 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 09:56:56,368 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 09:56:56,368 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 09:57:42,675 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 09:57:42,675 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 09:57:42,690 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 09:57:42,706 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 10:01:25,418 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 10:01:25,418 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 10:01:25,418 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 10:01:25,418 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 10:02:13,738 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 10:02:13,769 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 10:02:13,785 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 10:02:13,785 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 10:30:18,005 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 10:30:18,005 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 10:30:18,005 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 10:30:18,005 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 10:31:36,138 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 10:31:36,153 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 10:31:36,169 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 10:31:36,169 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 10:32:13,724 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 10:32:13,740 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 10:32:13,740 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 10:32:13,740 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 10:32:56,364 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 10:32:56,364 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 10:32:56,379 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 10:32:56,379 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 10:58:10,923 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 10:58:10,923 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 10:58:10,923 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 10:58:10,923 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 10:58:56,334 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 10:58:56,350 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 10:58:56,365 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 10:58:56,365 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 10:59:57,771 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 10:59:57,787 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 10:59:57,787 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 10:59:57,787 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 11:00:39,960 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 11:00:39,976 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 11:00:39,991 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 11:00:39,991 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 11:00:40,990 [main]  WARN - SQL Error: -99999, SQLState: 07006
+Jun 06 2016 11:00:40,990 [main] ERROR - Data type mismatch. (empty String)
+Jun 06 2016 11:15:03,687 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 11:15:03,687 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 11:15:03,687 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 11:15:03,687 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 11:15:53,156 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 11:15:53,156 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 11:15:53,171 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 11:15:53,171 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 11:16:04,154 [main]  WARN - SQL Error: -99999, SQLState: 07006
+Jun 06 2016 11:16:04,154 [main] ERROR - Data type mismatch. (empty String)
+Jun 06 2016 11:17:09,513 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 11:17:09,513 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 11:17:09,513 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 11:17:09,513 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 11:18:01,029 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 11:18:01,060 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 11:18:01,076 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 11:18:01,076 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 11:18:35,630 [main]  WARN - SQL Error: -99999, SQLState: 07006
+Jun 06 2016 11:18:35,630 [main] ERROR - Data type mismatch. (empty String)
+Jun 06 2016 11:19:51,561 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 11:19:51,577 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 11:19:51,577 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 11:19:51,577 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 11:20:33,295 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 11:20:33,311 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 11:20:33,311 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 11:20:33,326 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 11:20:46,898 [main]  WARN - SQL Error: -99999, SQLState: 07006
+Jun 06 2016 11:20:46,898 [main] ERROR - Data type mismatch. (empty String)
+Jun 06 2016 11:20:54,308 [main] ERROR - com.pacsun.submitorder.process.LocateSubmitOrderRequestor : Error in Locate Submit Order requestor.
+java.lang.NullPointerException
+	at com.pacsun.submitorder.process.LocateSubmitOrderProcess.run(LocateSubmitOrderProcess.java:46)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.run(LocateSubmitOrderRequestor.java:30)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.main(LocateSubmitOrderRequestor.java:17)
+
+Jun 06 2016 11:25:37,123 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 11:25:37,123 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 11:25:37,123 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 11:25:37,138 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 11:26:22,723 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 11:26:22,739 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 11:26:22,739 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 11:26:22,754 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 06 2016 11:30:51,899 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 06 2016 11:30:51,899 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 06 2016 11:30:51,899 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 06 2016 11:30:51,899 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 06 2016 11:37:11,801 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 06 2016 11:37:11,817 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 06 2016 11:37:11,817 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 06 2016 11:37:11,832 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory

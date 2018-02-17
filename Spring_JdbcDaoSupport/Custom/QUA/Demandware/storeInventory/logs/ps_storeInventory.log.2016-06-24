@@ -1,0 +1,38 @@
+Jun 24 2016 14:40:58,123 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 14:44:04,204 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 14:45:22,025 [main] ERROR - com.pacsun.dw.store.inventory.process.DWStoreInventoryFeedRequestor : Error in DW Store Inventory Feed requestor.
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.set(Unknown Source)
+	at com.pacsun.dw.store.inventory.process.DWStoreInventoryFeedProcess.run(DWStoreInventoryFeedProcess.java:59)
+	at com.pacsun.dw.store.inventory.process.DWStoreInventoryFeedRequestor.run(DWStoreInventoryFeedRequestor.java:32)
+	at com.pacsun.dw.store.inventory.process.DWStoreInventoryFeedRequestor.main(DWStoreInventoryFeedRequestor.java:17)
+
+Jun 24 2016 14:47:53,891 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 14:48:57,138 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 14:58:04,934 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 14:59:01,940 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 15:02:10,534 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 15:03:19,184 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 15:10:01,409 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 15:11:37,781 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 16:13:46,082 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 16:14:58,914 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 16:23:18,523 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 16:24:05,412 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 16:40:34,595 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 16:41:23,126 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 16:42:47,118 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 16:45:20,089 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 16:48:16,313 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 16:48:59,724 [main]  INFO - DW Store Inventory Feed Process has completed successfully.
+Jun 24 2016 20:36:26,673 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 20:36:26,918 [main] ERROR - com.pacsun.dw.store.inventory.process.DWStoreInventoryFeedRequestor : Error in DW Store Inventory Feed requestor.
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.math.BigDecimal
+	at com.pacsun.dw.store.inventory.dao.impl.InventoryDaoImpl.findAll(InventoryDaoImpl.java:25)
+	at com.pacsun.dw.store.inventory.process.DWStoreInventoryFeedProcess.run(DWStoreInventoryFeedProcess.java:52)
+	at com.pacsun.dw.store.inventory.process.DWStoreInventoryFeedRequestor.run(DWStoreInventoryFeedRequestor.java:32)
+	at com.pacsun.dw.store.inventory.process.DWStoreInventoryFeedRequestor.main(DWStoreInventoryFeedRequestor.java:17)
+
+Jun 24 2016 20:44:19,518 [main]  INFO - DW Store Inventory Feed process has started.
+Jun 24 2016 20:44:20,083 [main]  INFO - DW Store Inventory Feed Process has completed successfully.

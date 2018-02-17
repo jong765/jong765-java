@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<StatusListRequest xmlns="http://microsretail.com/Locate">
+			<status_list_request_message>
+				<message_header message_type="1" xaction_response="1"
+					xaction_type="INSERT" xmlns="">
+					<datetime>2016-07-15T17:01:57</datetime>
+					<version>5.2</version>
+					<source>Order Power</source>
+					<destination>LOCATE</destination>
+				</message_header>
+				<message_body xmlns="">
+					<lookup_data>
+						<employee_id>Order Power</employee_id>
+						<store_location system_cd="Ecommerce" />
+						<request_ids>
+							<request_ids request_id="41" />
+							<request_ids request_id="67" />
+							<request_ids request_id="70" />
+							<request_ids request_id="73" />
+							<request_ids request_id="76" />
+							<request_ids request_id="116" />
+							<request_ids request_id="119" />
+							<request_ids request_id="10" />
+							<request_ids request_id="19" />
+							<request_ids request_id="57" />
+							<request_ids request_id="60" />
+							<request_ids request_id="85" />
+							<request_ids request_id="39" />
+							<request_ids request_id="50" />
+							<request_ids request_id="55" />
+							<request_ids request_id="58" />
+							<request_ids request_id="61" />
+							<request_ids request_id="65" />
+							<request_ids request_id="68" />
+							<request_ids request_id="71" />
+							<request_ids request_id="74" />
+							<request_ids request_id="77" />
+							<request_ids request_id="118" />
+							<request_ids request_id="121" />
+						</request_ids>
+					</lookup_data>
+				</message_body>
+			</status_list_request_message>
+		</StatusListRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

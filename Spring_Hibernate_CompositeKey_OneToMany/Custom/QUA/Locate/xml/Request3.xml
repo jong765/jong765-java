@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<SubmitOrder xmlns="http://microsretail.com/Locate">
+			<order_request_message>
+				<message_header message_type="1" xaction_response="1"
+					xaction_type="" xmlns="">
+					<datetime>2016-07-12T21:39:00</datetime>
+					<version>5.2</version>
+					<source>Order Power</source>
+					<destination>LOCATE</destination>
+				</message_header>
+				<message_body xmlns="">
+					<transactions>
+						<transaction_header order_id="777000239"
+							transaction_no="" transaction_type_id="DELIVERY">
+							<transaction_date>2016-06-13T15:44:54</transaction_date>
+							<employee_id>Order Power</employee_id>
+							<transaction_subtotal>117.65</transaction_subtotal>
+							<transaction_tax>10.59</transaction_tax>
+							<transaction_total>148.24</transaction_total>
+							<transaction_status>new_order</transaction_status>
+							<transaction_channel>1</transaction_channel>
+							<ship_via>FX</ship_via>
+							<ship_via_description>FedEx Overnight</ship_via_description>
+							<gift>N</gift>
+							<freight_amount>20.0</freight_amount>
+							<balance_due>0.0</balance_due>
+							<under_review>N</under_review>
+							<sold_to_customer>
+								<name>
+									<first>JK</first>
+									<last>JK</last>
+								</name>
+								<address>
+									<address1>3450 E Miraloma Ave</address1>
+									<city>Anaheim</city>
+									<province>CA</province>
+									<postal>92806-2101</postal>
+									<email>kvo@pacsun.com</email>
+									<phone1>7144144368</phone1>
+									<country>USA</country>
+								</address>
+							</sold_to_customer>
+							<store_location location_cd="web899" system_cd="Ecommerce" />
+							<transaction_details>
+								<transaction_detail line_item_no="2">
+									<location_cd>899</location_cd>
+									<system_cd>Ecommerce</system_cd>
+									<item_id>000003960002</item_id>
+									<qty>3</qty>
+									<unit_price>14.95</unit_price>
+									<ship_to>
+										<name>
+											<first>John</first>
+											<last>Nguyen</last>
+										</name>
+										<address>
+											<address1>7584 Cody Dr</address1>
+											<city>Stanton</city>
+											<province>CA</province>
+											<postal>90680-1401</postal>
+											<country>USA</country>
+										</address>
+									</ship_to>
+									<taxes>
+										<tax description="tax" line_item_no="2">
+											<amount>3.63</amount>
+										</tax>
+									</taxes>
+									<line_item_status>polled</line_item_status>
+									<item_upc_cd></item_upc_cd>
+									<order_line_gift_wrap>
+									</order_line_gift_wrap>
+								</transaction_detail>
+								<transaction_detail line_item_no="4">
+									<location_cd>899</location_cd>
+									<system_cd>Ecommerce</system_cd>
+									<item_id>000005557764</item_id>
+									<qty>2</qty>
+									<unit_price>42.95</unit_price>
+									<ship_to>
+										<name>
+											<first>John</first>
+											<last>Nguyen</last>
+										</name>
+										<address>
+											<address1>7584 Cody Dr</address1>
+											<city>Stanton</city>
+											<province>CA</province>
+											<postal>90680-1401</postal>
+											<country>USA</country>
+										</address>
+									</ship_to>
+									<taxes>
+										<tax description="tax" line_item_no="4">
+											<amount>6.96</amount>
+										</tax>
+									</taxes>
+									<line_item_status>polled</line_item_status>
+									<item_upc_cd></item_upc_cd>
+									<order_line_gift_wrap>
+									</order_line_gift_wrap>
+								</transaction_detail>
+							</transaction_details>
+							<transaction_tenders>
+								<transaction_tender line_item_no="2">
+									<tender_description></tender_description>
+									<tender_amount>63.98</tender_amount>
+								</transaction_tender>
+								<transaction_tender line_item_no="4">
+									<tender_description></tender_description>
+									<tender_amount>84.26</tender_amount>
+								</transaction_tender>
+							</transaction_tenders>
+						</transaction_header>
+					</transactions>
+				</message_body>
+			</order_request_message>
+		</SubmitOrder>
+	</soapenv:Body>
+</soapenv:Envelope>

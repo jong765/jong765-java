@@ -1,0 +1,70 @@
+Jul 18 2016 11:06:33,182 [main]  INFO - LOCATE order status update process has started.
+Jul 18 2016 11:06:35,593 [main]  INFO - Locate order status update process has completed.  Total 1 order(s) were updated. 0 error(s) occurred.
+Jul 18 2016 15:51:24,509 [main]  INFO - LOCATE order status update process has started.
+Jul 18 2016 15:51:26,332 [main] ERROR - com.pacsun.locate.process.LocateOrderStatusUpdateRequestor : Error in LocateOrderStatusUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.statusUpdate(LocateServiceSoapBindingStub.java:1412)
+	at com.microsretail.Locate.LocateProxy.statusUpdate(LocateProxy.java:80)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callStatusUpdateRequest(WebServiceInvoker.java:46)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateProcess.updateLocateOrderStatus(LocateOrderStatusUpdateProcess.java:122)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateProcess.run(LocateOrderStatusUpdateProcess.java:93)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateRequestor.run(LocateOrderStatusUpdateRequestor.java:32)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateRequestor.main(LocateOrderStatusUpdateRequestor.java:17)
+
+Jul 18 2016 15:51:26,341 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.LocateOrderStatusUpdateRequestor : Error in LocateOrderStatusUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.statusUpdate(LocateServiceSoapBindingStub.java:1412)
+	at com.microsretail.Locate.LocateProxy.statusUpdate(LocateProxy.java:80)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callStatusUpdateRequest(WebServiceInvoker.java:46)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateProcess.updateLocateOrderStatus(LocateOrderStatusUpdateProcess.java:122)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateProcess.run(LocateOrderStatusUpdateProcess.java:93)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateRequestor.run(LocateOrderStatusUpdateRequestor.java:32)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateRequestor.main(LocateOrderStatusUpdateRequestor.java:17)
+
+	at com.pacsun.locate.process.LocateOrderStatusUpdateRequestor.run(LocateOrderStatusUpdateRequestor.java:37)
+	at com.pacsun.locate.process.LocateOrderStatusUpdateRequestor.main(LocateOrderStatusUpdateRequestor.java:17)
+

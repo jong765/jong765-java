@@ -1,0 +1,430 @@
+Jun 04 2016 18:38:49,392 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 18:38:49,399 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 18:38:49,400 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 18:38:49,402 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 18:38:50,668 [main]  WARN - HHH000342: Could not obtain connection to query metadata : java.net.ConnectException: Connection refused: connect
+Jun 04 2016 18:38:50,674 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 18:38:50,683 [main]  INFO - HHH000422: Disabling contextual LOB creation as connection was null
+Jun 04 2016 18:38:50,692 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 18:38:50,695 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 18:38:50,945 [main]  INFO - HHH000228: Running hbm2ddl schema update
+Jun 04 2016 18:38:50,945 [main]  INFO - HHH000102: Fetching database metadata
+Jun 04 2016 18:38:51,946 [main] ERROR - HHH000319: Could not get database metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:194)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:457)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1737)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1775)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.run(LocateSubmitOrderRequestor.java:26)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.main(LocateSubmitOrderRequestor.java:17)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 50 more
+Jun 04 2016 18:38:51,949 [main] ERROR - HHH000299: Could not complete schema update
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:194)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:457)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1737)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1775)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.run(LocateSubmitOrderRequestor.java:26)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.main(LocateSubmitOrderRequestor.java:17)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 50 more
+Jun 04 2016 18:38:53,274 [main]  WARN - SQL Error: -1301, SQLState: 08001
+Jun 04 2016 18:38:53,274 [main] ERROR - java.net.ConnectException: Connection refused: connect
+Jun 04 2016 18:38:53,277 [main] ERROR - com.pacsun.submitorder.process.LocateSubmitOrderRequestor : Error in Locate Submit Order requestor.
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Could not open connection
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:515)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy21.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.process.LocateSubmitOrderProcess.getDemandwareOrdersToProcess(LocateSubmitOrderProcess.java:46)
+	at com.pacsun.submitorder.process.LocateSubmitOrderProcess.run(LocateSubmitOrderProcess.java:35)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.run(LocateSubmitOrderRequestor.java:30)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.main(LocateSubmitOrderRequestor.java:17)
+Caused by: org.hibernate.exception.JDBCConnectionException: Could not open connection
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:67)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:304)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:169)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doBegin(JdbcTransaction.java:67)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.begin(AbstractTransactionImpl.java:160)
+	at org.hibernate.internal.SessionImpl.beginTransaction(SessionImpl.java:1263)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:474)
+	... 11 more
+Caused by: java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:276)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:297)
+	... 16 more
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 31 more
+
+Jun 04 2016 18:39:38,480 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 18:39:38,486 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 18:39:38,487 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 18:39:38,488 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 18:39:38,926 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 18:39:38,946 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 18:39:38,949 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 18:39:39,139 [main]  INFO - HHH000228: Running hbm2ddl schema update
+Jun 04 2016 18:39:39,139 [main]  INFO - HHH000102: Fetching database metadata
+Jun 04 2016 18:39:39,241 [main]  INFO - HHH000396: Updating schema
+Jun 04 2016 18:39:39,258 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 18:39:39,259 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 18:39:39,260 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 18:39:39,261 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 18:39:39,261 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 18:39:39,262 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 18:39:39,277 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))
+Jun 04 2016 18:39:39,278 [main] ERROR - object name already exists: PSDWLOC in statement [create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))]
+Jun 04 2016 18:39:39,278 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+Jun 04 2016 18:39:39,278 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+Jun 04 2016 18:39:39,278 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+Jun 04 2016 18:39:39,278 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+Jun 04 2016 18:39:39,280 [main]  INFO - HHH000232: Schema update complete
+Jun 04 2016 18:39:40,046 [main]  WARN - SQL Error: -5501, SQLState: 42501
+Jun 04 2016 18:39:40,046 [main] ERROR - user lacks privilege or object not found: DWORDERLOC0_.DWLCPSTS
+Jun 04 2016 18:39:40,050 [main] ERROR - com.pacsun.submitorder.process.LocateSubmitOrderRequestor : Error in Locate Submit Order requestor.
+java.lang.NullPointerException
+	at com.pacsun.submitorder.process.LocateSubmitOrderProcess.run(LocateSubmitOrderProcess.java:36)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.run(LocateSubmitOrderRequestor.java:30)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.main(LocateSubmitOrderRequestor.java:17)
+
+Jun 04 2016 18:40:12,835 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 18:40:12,840 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 18:40:12,841 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 18:40:12,843 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 18:40:13,201 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 18:40:13,221 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 18:40:13,224 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 18:40:13,413 [main]  INFO - HHH000227: Running hbm2ddl schema export
+Jun 04 2016 18:40:13,557 [main] ERROR - HHH000389: Unsuccessful: drop table OPCUS998.PSDWLOC if exists
+Jun 04 2016 18:40:13,557 [main] ERROR - is referenced by FOREIGN KEY constraint: OPCUS998.FK15FBE8797E5FA781 in statement [drop table OPCUS998.PSDWLOC if exists]
+Jun 04 2016 18:40:13,559 [main] ERROR - HHH000389: Unsuccessful: drop table OPCUS998.PSDWORDH if exists
+Jun 04 2016 18:40:13,559 [main] ERROR - is referenced by FOREIGN KEY constraint: OPCUS998.FK197BB18A7736D8C0 in statement [drop table OPCUS998.PSDWORDH if exists]
+Jun 04 2016 18:40:13,559 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))
+Jun 04 2016 18:40:13,560 [main] ERROR - object name already exists: PSDWLOC in statement [create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))]
+Jun 04 2016 18:40:13,561 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+Jun 04 2016 18:40:13,561 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+Jun 04 2016 18:40:13,563 [main]  INFO - HHH000230: Schema export complete
+Jun 04 2016 18:40:14,114 [main]  WARN - SQL Error: -5501, SQLState: 42501
+Jun 04 2016 18:40:14,114 [main] ERROR - user lacks privilege or object not found: DWORDERLOC0_.DWLCPSTS
+Jun 04 2016 18:40:14,117 [main] ERROR - com.pacsun.submitorder.process.LocateSubmitOrderRequestor : Error in Locate Submit Order requestor.
+java.lang.NullPointerException
+	at com.pacsun.submitorder.process.LocateSubmitOrderProcess.run(LocateSubmitOrderProcess.java:36)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.run(LocateSubmitOrderRequestor.java:30)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.main(LocateSubmitOrderRequestor.java:17)
+
+Jun 04 2016 18:43:42,904 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 18:43:42,909 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 18:43:42,910 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 18:43:42,912 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 18:43:43,275 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 18:43:43,295 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 18:43:43,298 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 18:43:43,491 [main]  INFO - HHH000227: Running hbm2ddl schema export
+Jun 04 2016 18:43:43,597 [main]  INFO - HHH000230: Schema export complete
+Jun 04 2016 18:43:44,164 [main]  INFO - Locate Submit Order Process has completed successfully.
+Jun 04 2016 19:00:30,100 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 19:00:30,107 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 19:00:30,108 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 19:00:30,110 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 19:00:30,528 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 19:00:30,554 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 19:00:30,559 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 19:00:30,803 [main]  INFO - HHH000227: Running hbm2ddl schema export
+Jun 04 2016 19:00:30,910 [main]  INFO - HHH000230: Schema export complete
+Jun 04 2016 19:00:31,616 [main]  INFO - Locate Submit Order Process has completed successfully.
+Jun 04 2016 19:01:43,370 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 19:01:43,377 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 19:01:43,379 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 19:01:43,381 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 19:01:43,823 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 19:01:43,854 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 19:01:43,858 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 19:01:44,102 [main]  INFO - HHH000228: Running hbm2ddl schema update
+Jun 04 2016 19:01:44,102 [main]  INFO - HHH000102: Fetching database metadata
+Jun 04 2016 19:01:44,206 [main]  INFO - HHH000396: Updating schema
+Jun 04 2016 19:01:44,208 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:01:44,208 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:01:44,208 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:01:44,210 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:01:44,211 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:01:44,213 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:01:44,217 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))
+Jun 04 2016 19:01:44,218 [main] ERROR - object name already exists: PSDWLOC in statement [create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))]
+Jun 04 2016 19:01:44,219 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+Jun 04 2016 19:01:44,219 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+Jun 04 2016 19:01:44,220 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+Jun 04 2016 19:01:44,220 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+Jun 04 2016 19:01:44,221 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+Jun 04 2016 19:01:44,221 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+Jun 04 2016 19:01:44,222 [main]  INFO - HHH000232: Schema update complete
+Jun 04 2016 19:03:34,129 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 19:03:34,134 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 19:03:34,135 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 19:03:34,136 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 19:03:34,491 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 19:03:34,511 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 19:03:34,514 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 19:03:34,703 [main]  INFO - HHH000228: Running hbm2ddl schema update
+Jun 04 2016 19:03:34,703 [main]  INFO - HHH000102: Fetching database metadata
+Jun 04 2016 19:03:34,807 [main]  INFO - HHH000396: Updating schema
+Jun 04 2016 19:03:34,808 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:03:34,809 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:03:34,810 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:03:34,811 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:03:34,811 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:03:34,812 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:03:34,827 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))
+Jun 04 2016 19:03:34,827 [main] ERROR - object name already exists: PSDWLOC in statement [create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))]
+Jun 04 2016 19:03:34,827 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+Jun 04 2016 19:03:34,827 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+Jun 04 2016 19:03:34,827 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+Jun 04 2016 19:03:34,827 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+Jun 04 2016 19:03:34,828 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+Jun 04 2016 19:03:34,828 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+Jun 04 2016 19:03:34,828 [main]  INFO - HHH000232: Schema update complete
+Jun 04 2016 19:03:35,473 [main] ERROR - com.pacsun.submitorder.process.LocateSubmitOrderRequestor : Error in Locate Submit Order requestor.
+java.lang.NullPointerException
+	at com.pacsun.submitorder.builder.OrderRequestBuilder.build(OrderRequestBuilder.java:25)
+	at com.pacsun.submitorder.process.LocateSubmitOrderProcess.run(LocateSubmitOrderProcess.java:38)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.run(LocateSubmitOrderRequestor.java:30)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.main(LocateSubmitOrderRequestor.java:17)
+
+Jun 04 2016 19:23:12,395 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 19:23:12,402 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 19:23:12,404 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 19:23:12,405 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 19:23:12,832 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 19:23:12,857 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 19:23:12,861 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 19:23:13,105 [main]  INFO - HHH000228: Running hbm2ddl schema update
+Jun 04 2016 19:23:13,105 [main]  INFO - HHH000102: Fetching database metadata
+Jun 04 2016 19:23:13,210 [main]  INFO - HHH000396: Updating schema
+Jun 04 2016 19:23:13,211 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:23:13,212 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:23:13,213 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:23:13,214 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:23:13,214 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:23:13,215 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:23:13,217 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))
+Jun 04 2016 19:23:13,217 [main] ERROR - object name already exists: PSDWLOC in statement [create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))]
+Jun 04 2016 19:23:13,217 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+Jun 04 2016 19:23:13,217 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+Jun 04 2016 19:23:13,218 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+Jun 04 2016 19:23:13,218 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+Jun 04 2016 19:23:13,218 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+Jun 04 2016 19:23:13,218 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+Jun 04 2016 19:23:13,218 [main]  INFO - HHH000232: Schema update complete
+Jun 04 2016 19:23:59,118 [main] ERROR - com.pacsun.submitorder.process.LocateSubmitOrderRequestor : Error in Locate Submit Order requestor.
+java.lang.NullPointerException
+	at com.pacsun.submitorder.builder.OrderRequestBuilder.build(OrderRequestBuilder.java:29)
+	at com.pacsun.submitorder.process.LocateSubmitOrderProcess.run(LocateSubmitOrderProcess.java:39)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.run(LocateSubmitOrderRequestor.java:30)
+	at com.pacsun.submitorder.process.LocateSubmitOrderRequestor.main(LocateSubmitOrderRequestor.java:17)
+
+Jun 04 2016 19:26:15,619 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 19:26:15,626 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 19:26:15,629 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 19:26:15,630 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 19:26:16,049 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 19:26:16,076 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 19:26:16,080 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 19:26:16,328 [main]  INFO - HHH000228: Running hbm2ddl schema update
+Jun 04 2016 19:26:16,328 [main]  INFO - HHH000102: Fetching database metadata
+Jun 04 2016 19:26:16,431 [main]  INFO - HHH000396: Updating schema
+Jun 04 2016 19:26:16,433 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:26:16,434 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:26:16,434 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:26:16,435 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:26:16,436 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:26:16,436 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:26:16,438 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))
+Jun 04 2016 19:26:16,438 [main] ERROR - object name already exists: PSDWLOC in statement [create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))]
+Jun 04 2016 19:26:16,439 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+Jun 04 2016 19:26:16,439 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+Jun 04 2016 19:26:16,439 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+Jun 04 2016 19:26:16,439 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+Jun 04 2016 19:26:16,439 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+Jun 04 2016 19:26:16,439 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+Jun 04 2016 19:26:16,440 [main]  INFO - HHH000232: Schema update complete
+Jun 04 2016 19:26:56,147 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 04 2016 19:26:56,154 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 04 2016 19:26:56,155 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 04 2016 19:26:56,156 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 04 2016 19:26:56,585 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Jun 04 2016 19:26:56,612 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 04 2016 19:26:56,617 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 04 2016 19:26:56,871 [main]  INFO - HHH000228: Running hbm2ddl schema update
+Jun 04 2016 19:26:56,871 [main]  INFO - HHH000102: Fetching database metadata
+Jun 04 2016 19:26:56,975 [main]  INFO - HHH000396: Updating schema
+Jun 04 2016 19:26:56,977 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:26:56,978 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:26:56,978 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:26:56,979 [main]  INFO - HHH000262: Table not found: PSDWLOC
+Jun 04 2016 19:26:56,980 [main]  INFO - HHH000262: Table not found: PSDWORDD
+Jun 04 2016 19:26:56,980 [main]  INFO - HHH000262: Table not found: PSDWORDH
+Jun 04 2016 19:26:56,982 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))
+Jun 04 2016 19:26:56,982 [main] ERROR - object name already exists: PSDWLOC in statement [create table OPCUS998.PSDWLOC (DWLCORID integer not null, DWLCPSTS varchar(255), primary key (DWLCORID))]
+Jun 04 2016 19:26:56,982 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+Jun 04 2016 19:26:56,982 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+Jun 04 2016 19:26:56,983 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+Jun 04 2016 19:26:56,983 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+Jun 04 2016 19:26:56,983 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+Jun 04 2016 19:26:56,983 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+Jun 04 2016 19:26:56,983 [main]  INFO - HHH000232: Schema update complete

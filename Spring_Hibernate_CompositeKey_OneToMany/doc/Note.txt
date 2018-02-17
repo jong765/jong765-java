@@ -1,0 +1,26 @@
+1. What are possible values for transaction status in order header interface file?
+2. What is the usage of "ship_complete" in submit order message?
+3. What is transaction channel?
+
+
+***********************************************
+* Locate Order Status Update
+* PDF page 415
+* Currently Allow Split Order preference is selected.
+* Currently Allow Partial Updates is unselected.
+***********************************************
+order_status:
+>Required if the Allow Split Order preference is
+unselected; otherwise, not used.
+
+line_no:
+>Identifies the order line to update if
+the Allow Split Order preference is
+selected; in this case, required. 
+>If the Allow Partial Updates preference is unselected and 
+the request message is from the originating location, this must be
+requesting system line number;
+otherwise, this must be the current line number in Locate.
+
+
+

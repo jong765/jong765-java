@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog xmlns="http://www.demandware.com/xml/impex/catalog/2006-10-31" catalog-id="pacsun_storefront_catalog">
+    <product product-id="0098236750002">
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <brand>Nike</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="smartItemID">0098236750003</custom-attribute>
+            <custom-attribute attribute-id="divisionCode">01</custom-attribute>
+            <custom-attribute attribute-id="division">MENS</custom-attribute>
+            <custom-attribute attribute-id="departmentCode">001</custom-attribute>
+            <custom-attribute attribute-id="department">M TOPS</custom-attribute>
+            <custom-attribute attribute-id="subdepartmentCode">0113</custom-attribute>
+            <custom-attribute attribute-id="subdepartment">M GRAPHIC TEES</custom-attribute>
+            <custom-attribute attribute-id="classCode">0098</custom-attribute>
+            <custom-attribute attribute-id="className">M S/S CORE TEES</custom-attribute>
+            <custom-attribute attribute-id="vendorCode">23675</custom-attribute>
+            <custom-attribute attribute-id="vendor">NIKE USA, INC</custom-attribute>
+            <custom-attribute attribute-id="styleCode">0003</custom-attribute>
+            <custom-attribute attribute-id="styleName">NIKE PRO BASIC LS MOCK</custom-attribute>
+            <custom-attribute attribute-id="brandCode">45</custom-attribute>
+            <custom-attribute attribute-id="countryOfOrigin"></custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colorCode" variation-attribute-id="color">
+                    <display-name xml:lang="x-default">Color</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="010">
+                            <display-value xml:lang="x-default">WHITE</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+                <variation-attribute attribute-id="sizeCode" variation-attribute-id="size">
+                    <display-name xml:lang="x-default">Size</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="9200">
+                            <display-value xml:lang="x-default">SML   SIZE</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="9300">
+                            <display-value xml:lang="x-default">MED   SIZE</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="9400">
+                            <display-value xml:lang="x-default">LRG   SIZE</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="9500">
+                            <display-value xml:lang="x-default">XLG   SIZE</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="1270768"/>
+                <variant product-id="1270776"/>
+                <variant product-id="1270784"/>
+                <variant product-id="1270792"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="0132436750005">
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <brand>Bullhead</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="divisionCode">01</custom-attribute>
+            <custom-attribute attribute-id="division">MENS</custom-attribute>
+            <custom-attribute attribute-id="departmentCode">002</custom-attribute>
+            <custom-attribute attribute-id="department">M BOTTOMS</custom-attribute>
+            <custom-attribute attribute-id="subdepartmentCode">0142</custom-attribute>
+            <custom-attribute attribute-id="subdepartment">M DENIM</custom-attribute>
+            <custom-attribute attribute-id="classCode">0132</custom-attribute>
+            <custom-attribute attribute-id="className">M FASHION DENIM</custom-attribute>
+            <custom-attribute attribute-id="vendorCode">43675</custom-attribute>
+            <custom-attribute attribute-id="vendor">LEADING GARMENTS LTD -PL</custom-attribute>
+            <custom-attribute attribute-id="styleCode">0005</custom-attribute>
+            <custom-attribute attribute-id="styleName">SLIM BLUE MIDNIGHT</custom-attribute>
+            <custom-attribute attribute-id="brandCode">3</custom-attribute>
+            <custom-attribute attribute-id="countryOfOrigin"></custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colorCode" variation-attribute-id="color">
+                    <display-name xml:lang="x-default">Color</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="248">
+                            <display-value xml:lang="x-default">MIDNIGHT BLUE</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+                <variation-attribute attribute-id="sizeCode" variation-attribute-id="size">
+                    <display-name xml:lang="x-default">Size</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="0290">
+                            <display-value xml:lang="x-default">29W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2310">
+                            <display-value xml:lang="x-default">31W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2340">
+                            <display-value xml:lang="x-default">34W X 32L</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="9580630"/>
+                <variant product-id="9580663"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="0136115090028">
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <brand>Levi's</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="divisionCode">01</custom-attribute>
+            <custom-attribute attribute-id="division">MENS</custom-attribute>
+            <custom-attribute attribute-id="departmentCode">002</custom-attribute>
+            <custom-attribute attribute-id="department">M BOTTOMS</custom-attribute>
+            <custom-attribute attribute-id="subdepartmentCode">0142</custom-attribute>
+            <custom-attribute attribute-id="subdepartment">M DENIM</custom-attribute>
+            <custom-attribute attribute-id="classCode">0136</custom-attribute>
+            <custom-attribute attribute-id="className">M BRANDED DENIM</custom-attribute>
+            <custom-attribute attribute-id="vendorCode">11509</custom-attribute>
+            <custom-attribute attribute-id="vendor">LEVI STRAUSS &amp; CO</custom-attribute>
+            <custom-attribute attribute-id="styleCode">0028</custom-attribute>
+            <custom-attribute attribute-id="styleName">511 SLIM TWILL PANT ECM</custom-attribute>
+            <custom-attribute attribute-id="brandCode">95</custom-attribute>
+            <custom-attribute attribute-id="countryOfOrigin"></custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colorCode" variation-attribute-id="color">
+                    <display-name xml:lang="x-default">Color</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="040">
+                            <display-value xml:lang="x-default">BLUE</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+                <variation-attribute attribute-id="sizeCode" variation-attribute-id="size">
+                    <display-name xml:lang="x-default">Size</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="0280">
+                            <display-value xml:lang="x-default">28W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="0300">
+                            <display-value xml:lang="x-default">30W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2300">
+                            <display-value xml:lang="x-default">30W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="0310">
+                            <display-value xml:lang="x-default">31W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2310">
+                            <display-value xml:lang="x-default">31W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="0320">
+                            <display-value xml:lang="x-default">32W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2320">
+                            <display-value xml:lang="x-default">32W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="4320">
+                            <display-value xml:lang="x-default">32W X 34L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2330">
+                            <display-value xml:lang="x-default">33W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="0340">
+                            <display-value xml:lang="x-default">34W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2340">
+                            <display-value xml:lang="x-default">34W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2360">
+                            <display-value xml:lang="x-default">36W X 32L</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="1032622"/>
+                <variant product-id="1032630"/>
+                <variant product-id="1032648"/>
+                <variant product-id="1032655"/>
+                <variant product-id="1032663"/>
+                <variant product-id="1032671"/>
+                <variant product-id="1032689"/>
+                <variant product-id="1032697"/>
+                <variant product-id="1032705"/>
+                <variant product-id="1032721"/>
+                <variant product-id="1162171"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="1270768">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">010</custom-attribute>
+            <custom-attribute attribute-id="color">WHITE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">9200</custom-attribute>
+            <custom-attribute attribute-id="size">SML   SIZE</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">BE</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">W BASICS/ESSENTIALS</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">AB</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">12/24_D01_AB</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">1.25</custom-attribute>
+            <custom-attribute attribute-id="productWidth">1.25</custom-attribute>
+            <custom-attribute attribute-id="productHeight">1.25</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">81%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1270776">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">010</custom-attribute>
+            <custom-attribute attribute-id="color">WHITE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">9300</custom-attribute>
+            <custom-attribute attribute-id="size">MED   SIZE</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">BE</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">W BASICS/ESSENTIALS</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">AB</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">12/24_D01_AB</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">81%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1270784">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">010</custom-attribute>
+            <custom-attribute attribute-id="color">WHITE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">9400</custom-attribute>
+            <custom-attribute attribute-id="size">LRG   SIZE</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">BE</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">W BASICS/ESSENTIALS</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">AB</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">12/24_D01_AB</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">81%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1270792">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">010</custom-attribute>
+            <custom-attribute attribute-id="color">WHITE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">9500</custom-attribute>
+            <custom-attribute attribute-id="size">XLG   SIZE</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">BE</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">W BASICS/ESSENTIALS</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">AB</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">12/24_D01_AB</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">81%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="9580630">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">248</custom-attribute>
+            <custom-attribute attribute-id="color">MIDNIGHT BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">2310</custom-attribute>
+            <custom-attribute attribute-id="size">31W X 32L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">BS</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M BOARD SPORTS</custom-attribute>
+            <custom-attribute attribute-id="redlinesCode">B7</custom-attribute>
+            <custom-attribute attribute-id="redlines">REDLINES O+E Q1 2013</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">MC</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">MULTI CHANNEL</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">YZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">TEST</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">10.30</custom-attribute>
+            <custom-attribute attribute-id="productWidth">8.10</custom-attribute>
+            <custom-attribute attribute-id="productHeight">3.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.22</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">65%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="9580663">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">248</custom-attribute>
+            <custom-attribute attribute-id="color">MIDNIGHT BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">2340</custom-attribute>
+            <custom-attribute attribute-id="size">34W X 32L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">BS</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M BOARD SPORTS</custom-attribute>
+            <custom-attribute attribute-id="redlinesCode">B7</custom-attribute>
+            <custom-attribute attribute-id="redlines">REDLINES O+E Q1 2013</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">MC</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">MULTI CHANNEL</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">YZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">TEST</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">14.10</custom-attribute>
+            <custom-attribute attribute-id="productWidth">12.10</custom-attribute>
+            <custom-attribute attribute-id="productHeight">1.80</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.33</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">65%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032622">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">0280</custom-attribute>
+            <custom-attribute attribute-id="size">28W X 30L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032630">
+        <upc>887035116544</upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">0300</custom-attribute>
+            <custom-attribute attribute-id="size">30W X 30L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032648">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">0310</custom-attribute>
+            <custom-attribute attribute-id="size">31W X 30L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032655">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">0320</custom-attribute>
+            <custom-attribute attribute-id="size">32W X 30L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032663">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">0340</custom-attribute>
+            <custom-attribute attribute-id="size">34W X 30L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032671">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">2300</custom-attribute>
+            <custom-attribute attribute-id="size">30W X 32L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032689">
+        <upc>887035116575</upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">2310</custom-attribute>
+            <custom-attribute attribute-id="size">31W X 32L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032697">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">2320</custom-attribute>
+            <custom-attribute attribute-id="size">32W X 32L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032705">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">2330</custom-attribute>
+            <custom-attribute attribute-id="size">33W X 32L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1032721">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">2360</custom-attribute>
+            <custom-attribute attribute-id="size">36W X 32L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="1162171">
+        <upc></upc>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <custom-attributes>
+            <custom-attribute attribute-id="colorCode">040</custom-attribute>
+            <custom-attribute attribute-id="color">BLUE</custom-attribute>
+            <custom-attribute attribute-id="sizeCode">4320</custom-attribute>
+            <custom-attribute attribute-id="size">32W X 34L</custom-attribute>
+            <custom-attribute attribute-id="customerSegmentsCode">CA</custom-attribute>
+            <custom-attribute attribute-id="customerSegments">M COACHELLA</custom-attribute>
+            <custom-attribute attribute-id="sellChannelCode">CM</custom-attribute>
+            <custom-attribute attribute-id="sellChannel">.COM EXCLUSIVES</custom-attribute>
+            <custom-attribute attribute-id="smartSeasonCode">CZ</custom-attribute>
+            <custom-attribute attribute-id="smartSeason">HOL2_N01_CZ</custom-attribute>
+            <custom-attribute attribute-id="markdown">N</custom-attribute>
+            <custom-attribute attribute-id="gtinCode"></custom-attribute>
+            <custom-attribute attribute-id="productLength">.00</custom-attribute>
+            <custom-attribute attribute-id="productWidth">.00</custom-attribute>
+            <custom-attribute attribute-id="productHeight">.00</custom-attribute>
+            <custom-attribute attribute-id="netWeight">1.00</custom-attribute>
+            <custom-attribute attribute-id="retailMargin">53%</custom-attribute>
+        </custom-attributes>
+    </product>
+</catalog>

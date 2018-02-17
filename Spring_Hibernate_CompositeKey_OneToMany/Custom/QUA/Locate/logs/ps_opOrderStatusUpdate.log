@@ -1,0 +1,172 @@
+Jul 18 2016 10:02:40,747 [main]  INFO - OP Order Status Update process has started.
+Jul 18 2016 10:03:02,564 [main] ERROR - com.pacsun.locate.process.OpOrderStatusUpdateRequestor : Error in OpOrderStatusUpdateProcess requestor.
+AxisFault
+ faultCode: {http://schemas.xmlsoap.org/soap/envelope/}Server.userException
+ faultSubcode: 
+ faultString: java.net.ConnectException: Connection refused: connect
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{http://xml.apache.org/axis/}stackTrace:java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:153)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:120)
+	at org.apache.axis.transport.http.HTTPSender.getSocket(HTTPSender.java:191)
+	at org.apache.axis.transport.http.HTTPSender.writeToSocket(HTTPSender.java:404)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:138)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.statusListRequest(LocateServiceSoapBindingStub.java:1480)
+	at com.microsretail.Locate.LocateProxy.statusListRequest(LocateProxy.java:92)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callStatusListRequest(WebServiceInvoker.java:40)
+	at com.pacsun.locate.process.OpOrderStatusUpdateProcess.run(OpOrderStatusUpdateProcess.java:49)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.run(OpOrderStatusUpdateRequestor.java:32)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.main(OpOrderStatusUpdateRequestor.java:17)
+
+	{http://xml.apache.org/axis/}hostname:IT4385LA
+
+java.net.ConnectException: Connection refused: connect
+	at org.apache.axis.AxisFault.makeFault(AxisFault.java:101)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:154)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.statusListRequest(LocateServiceSoapBindingStub.java:1480)
+	at com.microsretail.Locate.LocateProxy.statusListRequest(LocateProxy.java:92)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callStatusListRequest(WebServiceInvoker.java:40)
+	at com.pacsun.locate.process.OpOrderStatusUpdateProcess.run(OpOrderStatusUpdateProcess.java:49)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.run(OpOrderStatusUpdateRequestor.java:32)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.main(OpOrderStatusUpdateRequestor.java:17)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:153)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:120)
+	at org.apache.axis.transport.http.HTTPSender.getSocket(HTTPSender.java:191)
+	at org.apache.axis.transport.http.HTTPSender.writeToSocket(HTTPSender.java:404)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:138)
+	... 15 more
+
+Jul 18 2016 10:03:02,596 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.OpOrderStatusUpdateRequestor : Error in OpOrderStatusUpdateProcess requestor.
+AxisFault
+ faultCode: {http://schemas.xmlsoap.org/soap/envelope/}Server.userException
+ faultSubcode: 
+ faultString: java.net.ConnectException: Connection refused: connect
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{http://xml.apache.org/axis/}stackTrace:java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:153)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:120)
+	at org.apache.axis.transport.http.HTTPSender.getSocket(HTTPSender.java:191)
+	at org.apache.axis.transport.http.HTTPSender.writeToSocket(HTTPSender.java:404)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:138)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.statusListRequest(LocateServiceSoapBindingStub.java:1480)
+	at com.microsretail.Locate.LocateProxy.statusListRequest(LocateProxy.java:92)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callStatusListRequest(WebServiceInvoker.java:40)
+	at com.pacsun.locate.process.OpOrderStatusUpdateProcess.run(OpOrderStatusUpdateProcess.java:49)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.run(OpOrderStatusUpdateRequestor.java:32)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.main(OpOrderStatusUpdateRequestor.java:17)
+
+	{http://xml.apache.org/axis/}hostname:IT4385LA
+
+java.net.ConnectException: Connection refused: connect
+	at org.apache.axis.AxisFault.makeFault(AxisFault.java:101)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:154)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.statusListRequest(LocateServiceSoapBindingStub.java:1480)
+	at com.microsretail.Locate.LocateProxy.statusListRequest(LocateProxy.java:92)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callStatusListRequest(WebServiceInvoker.java:40)
+	at com.pacsun.locate.process.OpOrderStatusUpdateProcess.run(OpOrderStatusUpdateProcess.java:49)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.run(OpOrderStatusUpdateRequestor.java:32)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.main(OpOrderStatusUpdateRequestor.java:17)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:153)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:120)
+	at org.apache.axis.transport.http.HTTPSender.getSocket(HTTPSender.java:191)
+	at org.apache.axis.transport.http.HTTPSender.writeToSocket(HTTPSender.java:404)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:138)
+	... 15 more
+
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.run(OpOrderStatusUpdateRequestor.java:37)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.main(OpOrderStatusUpdateRequestor.java:17)
+
+Jul 18 2016 10:04:05,880 [main]  INFO - OP Order Status Update process has started.
+Jul 18 2016 10:15:22,805 [main]  INFO - OP Order Status Update from Locate process has completed. 26 order(s) were updated.
+Jul 18 2016 10:21:55,610 [main]  INFO - OP Order Status Update process has started.
+Jul 18 2016 10:22:04,754 [main]  INFO - OP Order Status Update from Locate process has completed. 26 order(s) were updated.

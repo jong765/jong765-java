@@ -1,0 +1,1386 @@
+May 28 2016 03:28:35,775 [main] ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1814d18] to prepare test instance [com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest@5a1b69]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:326)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 43 in XML document from class path resource [hsqlApplicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 43; columnNumber: 14; Element type "propname" must be followed by either attribute specifications, ">" or "/>".
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:251)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:235)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:118)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 43; columnNumber: 14; Element type "propname" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.seekCloseOfStartTag(XMLDocumentFragmentScannerImpl.java:1395)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:247)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2786)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 38 more
+May 28 2016 03:29:38,725 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 03:29:38,740 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 03:29:38,742 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 03:29:38,744 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 03:29:39,550 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 03:29:39,578 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 03:29:39,583 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 03:29:40,904 [main]  INFO - HHH000227: Running hbm2ddl schema export
+May 28 2016 03:29:41,008 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD drop constraint FK415EED2F51149EAA
+May 28 2016 03:29:41,008 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:29:41,009 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 03:29:41,009 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 03:29:41,010 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 03:29:41,010 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 03:29:41,010 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK415EED2F51149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 03:29:41,010 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:29:41,010 [main]  INFO - HHH000230: Schema export complete
+May 28 2016 03:29:41,922 [main]  WARN - SQL Error: -5501, SQLState: 42501
+May 28 2016 03:29:41,922 [main] ERROR - user lacks privilege or object not found: PSDWORDH
+May 28 2016 03:32:50,806 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 03:32:50,815 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 03:32:50,817 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 03:32:50,818 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 03:32:51,191 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 03:32:51,218 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 03:32:51,221 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 03:32:51,422 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 03:32:51,422 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 03:32:51,531 [main]  INFO - HHH000396: Updating schema
+May 28 2016 03:32:51,539 [main]  INFO - HHH000262: Table not found: OPCUS998.PSDWORDD
+May 28 2016 03:32:51,542 [main]  INFO - HHH000262: Table not found: OPCUS998.PSDWORDH
+May 28 2016 03:32:51,545 [main]  INFO - HHH000262: Table not found: OPCUS998.PSDWORDD
+May 28 2016 03:32:51,547 [main]  INFO - HHH000262: Table not found: OPCUS998.PSDWORDH
+May 28 2016 03:32:51,550 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 03:32:51,551 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 03:32:51,551 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 03:32:51,551 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 03:32:51,552 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK415EED2F51149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 03:32:51,552 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:32:51,552 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 03:32:51,910 [main]  WARN - SQL Error: -5501, SQLState: 42501
+May 28 2016 03:32:51,910 [main] ERROR - user lacks privilege or object not found: PSDWORDH
+May 28 2016 03:33:22,286 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 03:33:22,292 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 03:33:22,293 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 03:33:22,294 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 03:33:22,673 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 03:33:22,701 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 03:33:22,704 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 03:33:22,908 [main]  INFO - HHH000227: Running hbm2ddl schema export
+May 28 2016 03:33:23,014 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD drop constraint FK415EED2F51149EAA
+May 28 2016 03:33:23,014 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:33:23,017 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 03:33:23,017 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 03:33:23,019 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 03:33:23,019 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 03:33:23,020 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK415EED2F51149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 03:33:23,020 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:33:23,021 [main]  INFO - HHH000230: Schema export complete
+May 28 2016 03:33:23,386 [main]  WARN - SQL Error: -5501, SQLState: 42501
+May 28 2016 03:33:23,386 [main] ERROR - user lacks privilege or object not found: PSDWORDH
+May 28 2016 03:35:07,694 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 03:35:07,700 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 03:35:07,701 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 03:35:07,702 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 03:35:08,084 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 03:35:08,117 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 03:35:08,121 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 03:35:08,324 [main]  INFO - HHH000227: Running hbm2ddl schema export
+May 28 2016 03:35:08,431 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD drop constraint FK15FBE87951149EAA
+May 28 2016 03:35:08,431 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:35:08,433 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 03:35:08,433 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 03:35:08,434 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 03:35:08,434 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 03:35:08,435 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 03:35:08,435 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:35:08,436 [main]  INFO - HHH000230: Schema export complete
+May 28 2016 03:35:08,768 [main]  WARN - SQL Error: -5501, SQLState: 42501
+May 28 2016 03:35:08,768 [main] ERROR - user lacks privilege or object not found: PSDWORDH
+May 28 2016 03:43:27,446 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 03:43:27,458 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 03:43:27,460 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 03:43:27,461 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 03:43:27,935 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 03:43:27,964 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 03:43:27,969 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 03:43:28,361 [main]  INFO - HHH000227: Running hbm2ddl schema export
+May 28 2016 03:43:28,470 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD drop constraint FK15FBE87951149EAA
+May 28 2016 03:43:28,470 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:43:28,472 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 03:43:28,472 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 03:43:28,473 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 03:43:28,474 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 03:43:28,475 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 03:43:28,475 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 03:43:28,475 [main]  INFO - HHH000230: Schema export complete
+May 28 2016 03:43:28,885 [main]  WARN - SQL Error: -5501, SQLState: 42501
+May 28 2016 03:43:28,885 [main] ERROR - user lacks privilege or object not found: PSDWORDH
+May 28 2016 07:58:06,981 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 07:58:07,015 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 07:58:07,017 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 07:58:07,023 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 07:58:08,545 [main]  WARN - HHH000342: Could not obtain connection to query metadata : java.net.ConnectException: Connection refused: connect
+May 28 2016 07:58:08,553 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 07:58:08,564 [main]  INFO - HHH000422: Disabling contextual LOB creation as connection was null
+May 28 2016 07:58:08,572 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 07:58:08,577 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 07:58:08,863 [main]  INFO - HHH000227: Running hbm2ddl schema export
+May 28 2016 07:58:09,878 [main] ERROR - HHH000231: Schema export unsuccessful
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:368)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:305)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:294)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:452)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1737)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1775)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:326)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 76 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 79 more
+May 28 2016 07:58:09,880 [main]  INFO - HHH000230: Schema export complete
+May 28 2016 07:58:11,000 [main]  WARN - SQL Error: -1301, SQLState: 08001
+May 28 2016 07:58:11,000 [main] ERROR - java.net.ConnectException: Connection refused: connect
+May 28 2016 07:58:55,963 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 07:58:55,968 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 07:58:55,970 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 07:58:55,971 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 07:58:56,423 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 07:58:56,452 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 07:58:56,456 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 07:58:56,661 [main]  INFO - HHH000227: Running hbm2ddl schema export
+May 28 2016 07:58:56,765 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD drop constraint FK15FBE87951149EAA
+May 28 2016 07:58:56,765 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 07:58:56,766 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 07:58:56,766 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 07:58:56,766 [main] ERROR - HHH000389: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 07:58:56,766 [main] ERROR - invalid schema name: OPCUS998 in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 07:58:56,766 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 07:58:56,767 [main] ERROR - invalid schema name: OPCUS998
+May 28 2016 07:58:56,767 [main]  INFO - HHH000230: Schema export complete
+May 28 2016 07:58:57,210 [main]  WARN - SQL Error: -5501, SQLState: 42501
+May 28 2016 07:58:57,210 [main] ERROR - user lacks privilege or object not found: PSDWORDH
+May 28 2016 08:09:45,713 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 08:09:45,718 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 08:09:45,719 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 08:09:45,720 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 08:09:46,090 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 08:09:46,115 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 08:09:46,118 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 08:09:46,320 [main]  INFO - HHH000227: Running hbm2ddl schema export
+May 28 2016 08:09:46,427 [main] ERROR - HHH000389: Unsuccessful: alter table OPCUS998.PSDWORDD drop constraint FK15FBE87951149EAA
+May 28 2016 08:09:46,427 [main] ERROR - user lacks privilege or object not found: OPCUS998.PSDWORDD
+May 28 2016 08:09:46,433 [main]  INFO - HHH000230: Schema export complete
+May 28 2016 08:56:26,290 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 08:56:26,295 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 08:56:26,297 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 08:56:26,298 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 08:56:26,677 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 08:56:26,713 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 08:56:26,716 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 08:56:26,918 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 08:56:26,918 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 08:56:27,027 [main]  INFO - HHH000396: Updating schema
+May 28 2016 08:56:27,033 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 08:56:27,036 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 08:56:27,039 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 08:56:27,041 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 08:56:27,047 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 08:56:27,047 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 08:56:27,049 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 08:56:27,049 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 08:56:27,050 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 08:56:27,050 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 08:56:27,050 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 08:59:30,324 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 08:59:30,330 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 08:59:30,332 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 08:59:30,333 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 08:59:30,702 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 08:59:30,723 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 08:59:30,726 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 08:59:30,931 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 08:59:30,932 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 08:59:31,037 [main]  INFO - HHH000396: Updating schema
+May 28 2016 08:59:31,040 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 08:59:31,041 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 08:59:31,042 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 08:59:31,043 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 08:59:31,048 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 08:59:31,049 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 08:59:31,049 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 08:59:31,049 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 08:59:31,050 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 08:59:31,050 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 08:59:31,050 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 09:10:18,273 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 09:10:18,282 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 09:10:18,284 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 09:10:18,287 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 09:10:18,706 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 09:10:18,732 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 09:10:18,737 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 09:10:18,983 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 09:10:18,983 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 09:10:19,087 [main]  INFO - HHH000396: Updating schema
+May 28 2016 09:10:19,089 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 09:10:19,090 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 09:10:19,090 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 09:10:19,091 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 09:10:19,093 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 09:10:19,093 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 09:10:19,093 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 09:10:19,093 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 09:10:19,093 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 09:10:19,093 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 09:10:19,094 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 09:20:35,873 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 09:20:35,878 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 09:20:35,879 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 09:20:35,881 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 09:20:36,238 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 09:20:36,260 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 09:20:36,264 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 09:20:36,468 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 09:20:36,468 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 09:20:36,570 [main]  INFO - HHH000396: Updating schema
+May 28 2016 09:20:36,572 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 09:20:36,573 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 09:20:36,573 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 09:20:36,574 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 09:20:36,576 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 09:20:36,576 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 09:20:36,576 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 09:20:36,576 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 09:20:36,576 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 09:20:36,576 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 09:20:36,576 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 10:05:40,609 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 10:05:40,614 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 10:05:40,616 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 10:05:40,617 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 10:05:41,024 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 10:05:41,053 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 10:05:41,057 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 10:05:41,265 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 10:05:41,265 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 10:05:41,371 [main]  INFO - HHH000396: Updating schema
+May 28 2016 10:05:41,375 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:05:41,377 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:05:41,379 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:05:41,381 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:05:41,385 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 10:05:41,386 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 10:05:41,386 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 10:05:41,387 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 10:05:41,388 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 10:05:41,388 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 10:05:41,388 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 10:18:41,064 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 10:18:41,069 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 10:18:41,070 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 10:18:41,072 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 10:18:41,431 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 10:18:41,451 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 10:18:41,455 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 10:18:41,663 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 10:18:41,663 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 10:18:41,771 [main]  INFO - HHH000396: Updating schema
+May 28 2016 10:18:41,777 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:18:41,780 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:18:41,782 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:18:41,785 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:18:41,791 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 10:18:41,791 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 10:18:41,793 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 10:18:41,793 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 10:18:41,794 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 10:18:41,794 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 10:18:41,795 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 10:18:42,137 [main] ERROR -  Path expected for join!
+May 28 2016 10:18:42,144 [main] ERROR -  Path expected for join!
+ Path expected for join!
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:371)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3477)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3263)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3141)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:694)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:550)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:18:42,151 [main] ERROR -  Invalid path: 'd.DWOrderDetailCompositeKey.demandwareOrderId'
+May 28 2016 10:18:42,151 [main] ERROR -  Invalid path: 'd.DWOrderDetailCompositeKey.demandwareOrderId'
+ Invalid path: 'd.DWOrderDetailCompositeKey.demandwareOrderId'
+	at org.hibernate.hql.internal.ast.util.LiteralProcessor.lookupConstant(LiteralProcessor.java:131)
+	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:219)
+	at org.hibernate.hql.internal.ast.tree.FromReferenceNode.resolve(FromReferenceNode.java:118)
+	at org.hibernate.hql.internal.ast.tree.FromReferenceNode.resolve(FromReferenceNode.java:114)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:883)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1246)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4252)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:3733)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1923)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1848)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:18:42,151 [main] ERROR -  right-hand operand of a binary operator was null
+May 28 2016 10:18:42,151 [main] ERROR -  right-hand operand of a binary operator was null
+ right-hand operand of a binary operator was null
+	at org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:56)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1220)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4200)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1923)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1848)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:18:42,152 [main] ERROR - <AST>:0:0: unexpected end of subtree
+May 28 2016 10:18:42,152 [main] ERROR - <AST>:0:0: unexpected end of subtree
+<AST>:0:0: unexpected end of subtree
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1931)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1851)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:19:14,813 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 10:19:14,819 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 10:19:14,820 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 10:19:14,822 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 10:19:15,192 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 10:19:15,213 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 10:19:15,216 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 10:19:15,435 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 10:19:15,436 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 10:19:15,538 [main]  INFO - HHH000396: Updating schema
+May 28 2016 10:19:15,540 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:19:15,541 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:19:15,541 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:19:15,542 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:19:15,544 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 10:19:15,544 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 10:19:15,544 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 10:19:15,544 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 10:19:15,545 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 10:19:15,545 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 10:19:15,545 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 10:19:15,836 [main] ERROR -  Path expected for join!
+May 28 2016 10:19:15,837 [main] ERROR -  Path expected for join!
+ Path expected for join!
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:371)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3477)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3263)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3141)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:694)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:550)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:19:15,845 [main] ERROR -  Invalid path: 'd.dwOrderDetailCompositeKey.demandwareOrderId'
+May 28 2016 10:19:15,845 [main] ERROR -  Invalid path: 'd.dwOrderDetailCompositeKey.demandwareOrderId'
+ Invalid path: 'd.dwOrderDetailCompositeKey.demandwareOrderId'
+	at org.hibernate.hql.internal.ast.util.LiteralProcessor.lookupConstant(LiteralProcessor.java:131)
+	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:219)
+	at org.hibernate.hql.internal.ast.tree.FromReferenceNode.resolve(FromReferenceNode.java:118)
+	at org.hibernate.hql.internal.ast.tree.FromReferenceNode.resolve(FromReferenceNode.java:114)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:883)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1246)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4252)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:3733)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1923)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1848)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:19:15,845 [main] ERROR -  right-hand operand of a binary operator was null
+May 28 2016 10:19:15,845 [main] ERROR -  right-hand operand of a binary operator was null
+ right-hand operand of a binary operator was null
+	at org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:56)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1220)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4200)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1923)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1848)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:19:15,846 [main] ERROR - <AST>:0:0: unexpected end of subtree
+May 28 2016 10:19:15,846 [main] ERROR - <AST>:0:0: unexpected end of subtree
+<AST>:0:0: unexpected end of subtree
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1931)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1851)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:20:55,251 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 10:20:55,256 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 10:20:55,257 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 10:20:55,258 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 10:20:55,619 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 10:20:55,639 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 10:20:55,643 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 10:20:55,849 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 10:20:55,849 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 10:20:55,952 [main]  INFO - HHH000396: Updating schema
+May 28 2016 10:20:55,954 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:20:55,955 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:20:55,955 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:20:55,956 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:20:55,957 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 10:20:55,958 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 10:20:55,958 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 10:20:55,958 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 10:20:55,958 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 10:20:55,958 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 10:20:55,958 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 10:20:56,248 [main] ERROR -  Path expected for join!
+May 28 2016 10:20:56,249 [main] ERROR -  Path expected for join!
+ Path expected for join!
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:371)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3477)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3263)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3141)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:694)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:550)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:20:56,255 [main] ERROR -  Invalid path: 'd.dwOrderDetailCompositeKey.demandwareOrderId'
+May 28 2016 10:20:56,255 [main] ERROR -  Invalid path: 'd.dwOrderDetailCompositeKey.demandwareOrderId'
+ Invalid path: 'd.dwOrderDetailCompositeKey.demandwareOrderId'
+	at org.hibernate.hql.internal.ast.util.LiteralProcessor.lookupConstant(LiteralProcessor.java:131)
+	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:219)
+	at org.hibernate.hql.internal.ast.tree.FromReferenceNode.resolve(FromReferenceNode.java:118)
+	at org.hibernate.hql.internal.ast.tree.FromReferenceNode.resolve(FromReferenceNode.java:114)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:883)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1246)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4252)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:3733)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1923)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1848)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:20:56,255 [main] ERROR -  right-hand operand of a binary operator was null
+May 28 2016 10:20:56,255 [main] ERROR -  right-hand operand of a binary operator was null
+ right-hand operand of a binary operator was null
+	at org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:56)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1220)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4200)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1923)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1848)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:20:56,256 [main] ERROR - <AST>:0:0: unexpected end of subtree
+May 28 2016 10:20:56,256 [main] ERROR - <AST>:0:0: unexpected end of subtree
+<AST>:0:0: unexpected end of subtree
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1931)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:1851)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:583)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImpl.findUnprocessedOrders(DWOrderHeaderDaoImpl.java:51)
+	at com.pacsun.submitorder.service.impl.DWOrderHeaderServiceImpl.findUnprocessedOrders(DWOrderHeaderServiceImpl.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy27.findUnprocessedOrders(Unknown Source)
+	at com.pacsun.submitorder.dao.impl.DWOrderHeaderDaoImplTest.findUnprocessedOrders(DWOrderHeaderDaoImplTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+May 28 2016 10:21:50,451 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 10:21:50,457 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 10:21:50,459 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 10:21:50,460 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 10:21:50,823 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 10:21:50,843 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 10:21:50,847 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 10:21:51,058 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 10:21:51,058 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 10:21:51,165 [main]  INFO - HHH000396: Updating schema
+May 28 2016 10:21:51,167 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:21:51,168 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:21:51,168 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:21:51,169 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:21:51,170 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 10:21:51,170 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 10:21:51,171 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 10:21:51,171 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 10:21:51,171 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 10:21:51,171 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 10:21:51,171 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 10:22:11,662 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 10:22:11,667 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 10:22:11,668 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 10:22:11,669 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 10:22:12,034 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 10:22:12,055 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 10:22:12,058 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 10:22:12,261 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 10:22:12,261 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 10:22:12,364 [main]  INFO - HHH000396: Updating schema
+May 28 2016 10:22:12,365 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:22:12,366 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:22:12,368 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:22:12,369 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:22:12,372 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 10:22:12,373 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 10:22:12,374 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 10:22:12,374 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 10:22:12,374 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 10:22:12,374 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 10:22:12,375 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 10:22:39,849 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 10:22:39,855 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 10:22:39,856 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 10:22:39,857 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 10:22:40,235 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 10:22:40,257 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 10:22:40,261 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 10:22:40,481 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 10:22:40,481 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 10:22:40,585 [main]  INFO - HHH000396: Updating schema
+May 28 2016 10:22:40,587 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:22:40,588 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:22:40,588 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 10:22:40,589 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 10:22:40,590 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 10:22:40,590 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 10:22:40,591 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 10:22:40,591 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 10:22:40,591 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 10:22:40,591 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 10:22:40,591 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 11:15:42,966 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 11:15:42,972 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 11:15:42,974 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 11:15:42,975 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 11:15:43,360 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 11:15:43,381 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 11:15:43,384 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 11:15:43,595 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 11:15:43,595 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 11:15:43,699 [main]  INFO - HHH000396: Updating schema
+May 28 2016 11:15:43,702 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 11:15:43,703 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 11:15:43,703 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 11:15:43,704 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 11:15:43,706 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 11:15:43,706 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 11:15:43,707 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 11:15:43,707 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 11:15:43,707 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 11:15:43,707 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 11:15:43,708 [main]  INFO - HHH000232: Schema update complete
+May 28 2016 11:26:12,440 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+May 28 2016 11:26:12,446 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+May 28 2016 11:26:12,447 [main]  INFO - HHH000206: hibernate.properties not found
+May 28 2016 11:26:12,448 [main]  INFO - HHH000021: Bytecode provider name : javassist
+May 28 2016 11:26:12,836 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+May 28 2016 11:26:12,862 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+May 28 2016 11:26:12,865 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+May 28 2016 11:26:13,070 [main]  INFO - HHH000228: Running hbm2ddl schema update
+May 28 2016 11:26:13,070 [main]  INFO - HHH000102: Fetching database metadata
+May 28 2016 11:26:13,178 [main]  INFO - HHH000396: Updating schema
+May 28 2016 11:26:13,185 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 11:26:13,188 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 11:26:13,191 [main]  INFO - HHH000262: Table not found: PSDWORDD
+May 28 2016 11:26:13,194 [main]  INFO - HHH000262: Table not found: PSDWORDH
+May 28 2016 11:26:13,200 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))
+May 28 2016 11:26:13,200 [main] ERROR - object name already exists: PSDWORDD in statement [create table OPCUS998.PSDWORDD (DWODORID integer not null, DWODSEQ integer not null, DWODSHPID varchar(255) not null, DWODIDSC varchar(255), DWODITEM varchar(255), DWODOQTY double, primary key (DWODORID, DWODSEQ, DWODSHPID))]
+May 28 2016 11:26:13,202 [main] ERROR - HHH000388: Unsuccessful: create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))
+May 28 2016 11:26:13,202 [main] ERROR - object name already exists: PSDWORDH in statement [create table OPCUS998.PSDWORDH (DWOHORID integer not null, DWOHMGPRC double, DWOHMNPRC double, DWOHMTAMT double, DWOHPSTS varchar(255), primary key (DWOHORID))]
+May 28 2016 11:26:13,203 [main] ERROR - HHH000388: Unsuccessful: alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH
+May 28 2016 11:26:13,203 [main] ERROR - object name already exists: FK15FBE87951149EAA in statement [alter table OPCUS998.PSDWORDD add constraint FK15FBE87951149EAA foreign key (DWODORID) references OPCUS998.PSDWORDH]
+May 28 2016 11:26:13,204 [main]  INFO - HHH000232: Schema update complete

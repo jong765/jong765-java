@@ -1,0 +1,565 @@
+Jul 22 2016 13:06:42,625 [main] ERROR - com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locateOrderUpdateProcess': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder com.pacsun.locate.process.LocateOrderUpdateProcess.locateOrderUpdateRequestBuilder; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locateOrderUpdateRequestBuilder': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder.orderUpdateRequestMessageHeader; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:973)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:30)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder com.pacsun.locate.process.LocateOrderUpdateProcess.locateOrderUpdateRequestBuilder; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locateOrderUpdateRequestBuilder': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder.orderUpdateRequestMessageHeader; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 10 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locateOrderUpdateRequestBuilder': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder.orderUpdateRequestMessageHeader; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 12 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder.orderUpdateRequestMessageHeader; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 23 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 25 more
+
+Jul 22 2016 13:06:42,629 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locateOrderUpdateProcess': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder com.pacsun.locate.process.LocateOrderUpdateProcess.locateOrderUpdateRequestBuilder; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locateOrderUpdateRequestBuilder': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder.orderUpdateRequestMessageHeader; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:973)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:30)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder com.pacsun.locate.process.LocateOrderUpdateProcess.locateOrderUpdateRequestBuilder; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locateOrderUpdateRequestBuilder': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder.orderUpdateRequestMessageHeader; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 10 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locateOrderUpdateRequestBuilder': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder.orderUpdateRequestMessageHeader; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 12 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean com.pacsun.locate.builder.LocateOrderUpdateRequestBuilder.orderUpdateRequestMessageHeader; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 23 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 25 more
+
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:36)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:08:58,084 [main]  INFO - LOCATE order update process has started.
+Jul 22 2016 13:08:58,237 [main] ERROR - com.pacsun.locate.dao.impl.LocateOrderUpdateDaoImpl : org.hibernate.hql.internal.ast.QuerySyntaxException: LocateOrderMessageUpdate is not mapped [FROM LocateOrderMessageUpdate o WHERE o.processFlag = :processFlag]
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:180)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:110)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:93)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:326)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3252)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3141)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:694)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:550)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.locate.dao.impl.LocateOrderUpdateDaoImpl.findOrdersToProcess(LocateOrderUpdateDaoImpl.java:32)
+	at com.pacsun.locate.service.impl.LocateOrderUpdateServiceImpl.findOrdersToProcess(LocateOrderUpdateServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy25.findOrdersToProcess(Unknown Source)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.getOrdersToUpdate(LocateOrderUpdateProcess.java:85)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:50)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:08:58,281 [main] ERROR - com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+java.lang.Exception: org.hibernate.hql.internal.ast.QuerySyntaxException: LocateOrderMessageUpdate is not mapped [FROM LocateOrderMessageUpdate o WHERE o.processFlag = :processFlag]
+	at com.pacsun.locate.dao.impl.LocateOrderUpdateDaoImpl.findOrdersToProcess(LocateOrderUpdateDaoImpl.java:38)
+	at com.pacsun.locate.service.impl.LocateOrderUpdateServiceImpl.findOrdersToProcess(LocateOrderUpdateServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy25.findOrdersToProcess(Unknown Source)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.getOrdersToUpdate(LocateOrderUpdateProcess.java:85)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:50)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: LocateOrderMessageUpdate is not mapped [FROM LocateOrderMessageUpdate o WHERE o.processFlag = :processFlag]
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:180)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:110)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:93)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:326)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3252)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3141)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:694)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:550)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.locate.dao.impl.LocateOrderUpdateDaoImpl.findOrdersToProcess(LocateOrderUpdateDaoImpl.java:32)
+	... 18 more
+
+Jul 22 2016 13:08:58,285 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+java.lang.Exception: org.hibernate.hql.internal.ast.QuerySyntaxException: LocateOrderMessageUpdate is not mapped [FROM LocateOrderMessageUpdate o WHERE o.processFlag = :processFlag]
+	at com.pacsun.locate.dao.impl.LocateOrderUpdateDaoImpl.findOrdersToProcess(LocateOrderUpdateDaoImpl.java:38)
+	at com.pacsun.locate.service.impl.LocateOrderUpdateServiceImpl.findOrdersToProcess(LocateOrderUpdateServiceImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy25.findOrdersToProcess(Unknown Source)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.getOrdersToUpdate(LocateOrderUpdateProcess.java:85)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:50)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: LocateOrderMessageUpdate is not mapped [FROM LocateOrderMessageUpdate o WHERE o.processFlag = :processFlag]
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:180)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:110)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:93)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:326)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3252)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3141)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:694)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:550)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:235)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:248)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:119)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:214)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:192)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1537)
+	at com.pacsun.locate.dao.impl.LocateOrderUpdateDaoImpl.findOrdersToProcess(LocateOrderUpdateDaoImpl.java:32)
+	... 18 more
+
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:36)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:10:25,360 [main]  INFO - LOCATE order update process has started.
+Jul 22 2016 13:10:27,136 [main] ERROR - com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:92)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:60)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:10:27,142 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:92)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:60)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:36)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:12:11,737 [main]  INFO - LOCATE order update process has started.
+Jul 22 2016 13:12:13,449 [main] ERROR - com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:92)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:60)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:12:13,456 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:92)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:60)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:36)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:15:19,128 [main]  INFO - LOCATE order update process has started.
+Jul 22 2016 13:15:20,852 [main] ERROR - com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:92)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:60)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:15:20,863 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:92)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:60)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:36)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:23:39,331 [main]  INFO - LOCATE order update process has started.
+Jul 22 2016 13:23:41,082 [main] ERROR - com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:96)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:65)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:23:41,093 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:96)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:65)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:36)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:26:41,742 [main]  INFO - LOCATE order update process has started.
+Jul 22 2016 13:26:43,426 [main] ERROR - com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:96)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:65)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:26:43,439 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.LocateOrderUpdateRequestor : Error in LocateOrderUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.orderUpdate(LocateServiceSoapBindingStub.java:1242)
+	at com.microsretail.Locate.LocateProxy.orderUpdate(LocateProxy.java:62)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callOrderUpdateRequest(WebServiceInvoker.java:52)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.updateLocateOrder(LocateOrderUpdateProcess.java:96)
+	at com.pacsun.locate.process.LocateOrderUpdateProcess.run(LocateOrderUpdateProcess.java:65)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:31)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.run(LocateOrderUpdateRequestor.java:36)
+	at com.pacsun.locate.process.LocateOrderUpdateRequestor.main(LocateOrderUpdateRequestor.java:17)
+
+Jul 22 2016 13:27:50,637 [main]  INFO - LOCATE order update process has started.
+Jul 22 2016 13:27:53,379 [main]  INFO - Locate order update process has completed.  Total 6 order(s) were updated. 0 error(s) occurred.

@@ -1,0 +1,21 @@
+Jul 25 2016 10:13:30,075 [Thread1]  INFO - Locate submit order process has started.
+Jul 25 2016 10:13:30,075 [Thread2]  INFO - Locate submit order process has started.
+Jul 25 2016 10:13:31,682 [Thread2] ERROR - Error: OrderId=44091408, PickTicketCode=DTH, FulfillmentLocation=899       
+Jul 25 2016 10:13:31,682 [Thread2]  INFO - Locate submit order process has completed. 0 order(s) have processed. 0 error(s) occurred.
+Jul 25 2016 10:13:32,743 [Thread1] ERROR - Error: OrderId=258, PickTicketCode=PCK, FulfillmentLocation=1018      
+Jul 25 2016 10:13:32,743 [Thread1]  INFO - Locate submit order process has completed. 0 order(s) have processed. 0 error(s) occurred.
+Jul 25 2016 10:19:38,622 [Thread1]  INFO - Locate submit order process has started.
+Jul 25 2016 10:24:59,209 [Thread1]  INFO - Locate submit order process has completed. 1 order(s) have processed. 0 error(s) occurred.
+Jul 25 2016 10:31:27,580 [Thread1]  INFO - Locate submit order process has started.
+Jul 25 2016 10:31:29,642 [Thread1]  INFO - Locate submit order process has completed. 1 order(s) have processed. 0 error(s) occurred.
+Jul 25 2016 10:46:09,964 [Thread1]  INFO - Locate submit order process has started.
+Jul 25 2016 10:46:11,438 [Thread1]  INFO - Locate submit order process has completed. 1 order(s) have processed. 0 error(s) occurred.
+Jul 25 2016 10:47:01,983 [main]  INFO - There are no orders to process at this time.
+Jul 25 2016 10:47:20,373 [Thread1]  INFO - Locate submit order process has started.
+Jul 25 2016 10:48:08,159 [Thread1]  INFO - Locate submit order process has completed. 1 order(s) have processed. 0 error(s) occurred.
+Jul 25 2016 10:49:09,066 [Thread1]  INFO - Locate submit order process has started.
+Jul 25 2016 10:51:06,583 [Thread1]  INFO - Locate submit order process has completed. 1 order(s) have processed. 0 error(s) occurred.
+Jul 25 2016 10:54:49,696 [Thread1]  INFO - Locate submit order process has started.
+Jul 25 2016 10:54:51,190 [Thread1]  INFO - Locate submit order process has completed. 1 order(s) have processed. 0 error(s) occurred.
+Jul 25 2016 11:08:14,280 [Thread1]  INFO - Locate submit order process has started.
+Jul 25 2016 11:08:15,769 [Thread1]  INFO - Locate submit order process has completed. 1 order(s) have processed. 0 error(s) occurred.

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<StatusUpdate xmlns="http://microsretail.com/Locate">
+			<status_update_request_message>
+				<message_header message_type="1" xaction_response="1"
+					xaction_type="INSERT" xmlns="">
+					<datetime>2016-07-08T16:08:18</datetime>
+					<version>5.2</version>
+					<source>Order Power</source>
+					<destination>LOCATE</destination>
+				</message_header>
+				<message_body xmlns="">
+					<order order_id="241" request_id="42">
+						<employee_id>Order Power</employee_id>
+						<store_location location_cd="4899" system_cd="Ecommerce" />
+						<items>
+							<item item_qty="2" item_status="fulfilled"
+								item_status_reason_code="" item_status_reason_note="" line_no="1"
+								requesting_system_line_no="0" shipping_agent="FX"
+								tracking_number="673341858475" />
+							<item item_qty="2" item_status="fulfilled"
+								item_status_reason_code="" item_status_reason_note="" line_no="1"
+								requesting_system_line_no="0" shipping_agent="FX"
+								tracking_number="673341858475" />
+							<item item_qty="2" item_status="fulfilled"
+								item_status_reason_code="" item_status_reason_note="" line_no="2"
+								requesting_system_line_no="0" shipping_agent="FX"
+								tracking_number="673341858475" />
+						</items>
+					</order>
+				</message_body>
+			</status_update_request_message>
+		</StatusUpdate>
+	</soapenv:Body>
+</soapenv:Envelope>

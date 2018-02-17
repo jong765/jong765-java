@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/beans    
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<context:annotation-config />
+	<tx:annotation-driven />
+
+	<context:component-scan base-package="com.pacsun" />
+	
+	<!-- Properties -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:ps_dbhsql.properties</value>
+				<value>classpath:ps_locate.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${hsql.driver}" />
+		<property name="url" value="${hsql.url}" />
+		<property name="username" value="${hsql.user}" />
+	</bean>
+	
+	<bean id="hibernateInterceptor" class="com.pacsun.locate.interceptor.HibernateInterceptor">
+		<property name="catalog" value="${order.header.interface.file.library}" />
+ 	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="entityInterceptor">
+        	<ref bean="hibernateInterceptor"/>
+    	</property>
+		<property name="packagesToScan" value="com.pacsun.locate.submitorder.model" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		<property name="annotatedClasses">
+			<list>
+				<value>com.pacsun.locate.submitorder.model.OrderHeader</value>
+				<value>com.pacsun.locate.submitorder.model.OrderDetail</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="locateProxy" class="com.microsretail.Locate.LocateProxy" />
+	<bean id="orderRequestMessage" class="com.microsretail.Locate.SubmitOrderRequestMessageTypeBean" />
+	<bean id="messageHeader" class="com.microsretail.Locate.SubmitOrderRequestMessageHeaderTypeBean" />
+	<bean id="messageTransactions" class="com.microsretail.Locate.SubmitOrderRequestMessageTransactionsTypeBean" />
+	<bean id="messageTransactionHeader" class="com.microsretail.Locate.SubmitOrderRequestMessageTransactionHeaderTypeBean" />
+	<bean id="soldToCustomer" class="com.microsretail.Locate.SoldToCustomerTypeBean" />
+	
+	<bean id="orderHeader" class="com.pacsun.locate.submitorder.model.OrderHeader" />
+	<bean id="locateSubmitOrderProcess" class="com.pacsun.locate.submitorder.process.LocateSubmitOrderProcess" />
+	<bean id="orderRequestBuilder" class="com.pacsun.locate.submitorder.builder.OrderRequestBuilder" />
+	<bean id="orderResponseHandler" class="com.pacsun.locate.submitorder.handler.OrderResponseHandler" />
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+		p:sessionFactory-ref="sessionFactory">
+	</bean>
+</beans>

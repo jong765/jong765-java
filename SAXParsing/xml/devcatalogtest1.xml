@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.demandware.com/xml/impex/catalog/2006-10-31" catalog-id="pacsun_storefront_catalog">
+    <header>
+        <image-settings>
+            <external-location>
+                <http-url>http://images4.pacsun.com/is/image/pacsunproducts/</http-url>
+                <https-url>https://images4.pacsun.com/is/image/pacsunproducts/</https-url>
+            </external-location>
+            <view-types>
+                <view-type>cart-recommendations</view-type>
+                <view-type>compare-thumb</view-type>
+                <view-type>cart-thumb</view-type>
+                <view-type>product-list</view-type>
+                <view-type>search-recommendations</view-type>
+                <view-type>minicart-thumb</view-type>
+                <view-type>product-detail</view-type>
+                <view-type>product-thumb</view-type>
+                <view-type>orderreview-thumb</view-type>
+                <view-type>swatches</view-type>
+                <view-type>pdp-swatches</view-type>
+                <view-type>product-recommendations</view-type>
+                <view-type>noresults-recommendations</view-type>
+                <view-type>wishlist-email</view-type>
+                <view-type>mobile-product-list</view-type>
+                <view-type>mobile-product-thumb</view-type>
+                <view-type>mobile-product-detail</view-type>
+                <view-type>mobile-orderreview-thumb</view-type>
+                <view-type>tablet-cart-thumb</view-type>
+                <view-type>tablet-product-list</view-type>
+                <view-type>tablet-product-thumb</view-type>
+                <view-type>tablet-product-detail</view-type>
+                <view-type>tablet-minicart-thumb</view-type>
+                <view-type>tablet-ordersummary-thumb</view-type>
+                <view-type>ensemble-product-thumb</view-type>
+                <view-type>giftcard-detail</view-type>
+                <view-type>giftcard-swatch</view-type>
+            </view-types>
+            <variation-attribute-id>color</variation-attribute-id>
+            <alt-pattern>${productname}</alt-pattern>
+            <title-pattern>${productname}</title-pattern>
+        </image-settings>
+    </header>
+
+    <product product-id="0133445380012">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <display-name xml:lang="x-default">Gravels Slim Chino Steeple Gray</display-name>
+        <short-description xml:lang="x-default">&lt;p&gt;This Chino is the biggest new trend in bottoms and the perfect alternative to the 5-pocket jean. Our Chino is offered in new fabric, fits and style with a unique interior trim package. Offered in an extended range, it&amp;rsquo;s the newest way to wear colored bottoms. It&amp;rsquo;s the same great fit, but with a whole new attitude.&lt;/p&gt;&#13;
+&lt;div class="product_description"&gt;&#13;
+&lt;ul&gt;&#13;
+    &lt;li&gt;Gravels is our slim fit, sits below the waist, fitted, but with relaxed  attitude.&lt;/li&gt;&#13;
+    &lt;li&gt;Clean and narrow, but with a little more room for comfort and movement.&lt;/li&gt;&#13;
+    &lt;li&gt;15.5&amp;quot; leg opening.&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
+&lt;/div&gt;</short-description>
+        <online-flag>true</online-flag>
+        <online-from>2012-07-01T07:00:00.000Z</online-from>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <searchable-if-unavailable-flag>false</searchable-if-unavailable-flag>
+        <searchable-if-unavailable-flag site-id="pacsun">false</searchable-if-unavailable-flag>
+        <searchable-if-unavailable-flag site-id="tablet">false</searchable-if-unavailable-flag>
+        <images>
+            <image-group view-type="cart-recommendations" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-cart-recommendations$"/>
+                <image path="0133445380012NEW_02_004?$dw-cart-recommendations$"/>
+                <image path="0133445380012NEW_03_004?$dw-cart-recommendations$"/>
+                <image path="0133445380012NEW_00_004?$dw-cart-recommendations$"/>
+            </image-group>
+            <image-group view-type="cart-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-cart-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dw-cart-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dw-cart-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dw-cart-thumb$"/>
+            </image-group>
+            <image-group view-type="compare-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-compare-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dw-compare-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dw-compare-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dw-compare-thumb$"/>
+            </image-group>
+            <image-group view-type="ensemble-product-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-ensemble-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dw-ensemble-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dw-ensemble-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dw-ensemble-thumb$"/>
+            </image-group>
+            <image-group view-type="giftcard-detail" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-giftcard-detail$"/>
+                <image path="0133445380012NEW_02_004?$dw-giftcard-detail$"/>
+                <image path="0133445380012NEW_03_004?$dw-giftcard-detail$"/>
+                <image path="0133445380012NEW_00_004?$dw-giftcard-detail$"/>
+            </image-group>
+            <image-group view-type="giftcard-swatch" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-giftcard-swatch$"/>
+                <image path="0133445380012NEW_02_004?$dw-giftcard-swatch$"/>
+                <image path="0133445380012NEW_03_004?$dw-giftcard-swatch$"/>
+                <image path="0133445380012NEW_00_004?$dw-giftcard-swatch$"/>
+            </image-group>
+            <image-group view-type="minicart-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-minicart-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dw-minicart-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dw-minicart-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dw-minicart-thumb$"/>
+            </image-group>
+            <image-group view-type="mobile-giftcard-detail" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwm-giftcard-detail$"/>
+                <image path="0133445380012NEW_02_004?$dwm-giftcard-detail$"/>
+                <image path="0133445380012NEW_03_004?$dwm-giftcard-detail$"/>
+                <image path="0133445380012NEW_00_004?$dwm-giftcard-detail$"/>
+            </image-group>
+            <image-group view-type="mobile-orderreview-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwm-orderreview-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dwm-orderreview-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dwm-orderreview-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dwm-orderreview-thumb$"/>
+            </image-group>
+            <image-group view-type="mobile-product-detail" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwm-product-detail$"/>
+                <image path="0133445380012NEW_02_004?$dwm-product-detail$"/>
+                <image path="0133445380012NEW_03_004?$dwm-product-detail$"/>
+                <image path="0133445380012NEW_00_004?$dwm-product-detail$"/>
+            </image-group>
+            <image-group view-type="mobile-product-list" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwm-product-list$"/>
+                <image path="0133445380012NEW_02_004?$dwm-product-list$"/>
+                <image path="0133445380012NEW_03_004?$dwm-product-list$"/>
+                <image path="0133445380012NEW_00_004?$dwm-product-list$"/>
+            </image-group>
+            <image-group view-type="mobile-product-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwm-product-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dwm-product-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dwm-product-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dwm-product-thumb$"/>
+            </image-group>
+            <image-group view-type="noresults-recommendations" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-noresults-recommendations$"/>
+                <image path="0133445380012NEW_02_004?$dw-noresults-recommendations$"/>
+                <image path="0133445380012NEW_03_004?$dw-noresults-recommendations$"/>
+                <image path="0133445380012NEW_00_004?$dw-noresults-recommendations$"/>
+            </image-group>
+            <image-group view-type="orderreview-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-orderreview-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dw-orderreview-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dw-orderreview-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dw-orderreview-thumb$"/>
+            </image-group>
+            <image-group view-type="pdp-swatches" variation-value="004">
+                <image path="0133445380012_sw_004?$dw-product-swatch-pdp$"/>
+            </image-group>
+            <image-group view-type="product-detail" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-product-detail$"/>
+                <image path="0133445380012NEW_02_004?$dw-product-detail$"/>
+                <image path="0133445380012NEW_03_004?$dw-product-detail$"/>
+                <image path="0133445380012NEW_00_004?$dw-product-detail$"/>
+            </image-group>
+            <image-group view-type="product-list" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-product-list$"/>
+                <image path="0133445380012NEW_02_004?$dw-product-list$"/>
+                <image path="0133445380012NEW_03_004?$dw-product-list$"/>
+                <image path="0133445380012NEW_00_004?$dw-product-list$"/>
+            </image-group>
+            <image-group view-type="product-recommendations" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-product-recommendations$"/>
+                <image path="0133445380012NEW_02_004?$dw-product-recommendations$"/>
+                <image path="0133445380012NEW_03_004?$dw-product-recommendations$"/>
+                <image path="0133445380012NEW_00_004?$dw-product-recommendations$"/>
+            </image-group>
+            <image-group view-type="product-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-product-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dw-product-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dw-product-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dw-product-thumb$"/>
+            </image-group>
+            <image-group view-type="search-recommendations" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-search-recommendations$"/>
+                <image path="0133445380012NEW_02_004?$dw-search-recommendations$"/>
+                <image path="0133445380012NEW_03_004?$dw-search-recommendations$"/>
+                <image path="0133445380012NEW_00_004?$dw-search-recommendations$"/>
+            </image-group>
+            <image-group view-type="swatches" variation-value="004">
+                <image path="0133445380012_sw_004?$dw-product-swatch$"/>
+            </image-group>
+            <image-group view-type="tablet-cart-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwt-cart-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dwt-cart-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dwt-cart-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dwt-cart-thumb$"/>
+            </image-group>
+            <image-group view-type="tablet-minicart-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwt-minicart-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dwt-minicart-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dwt-minicart-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dwt-minicart-thumb$"/>
+            </image-group>
+            <image-group view-type="tablet-ordersummary-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwt-ordersummary-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dwt-ordersummary-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dwt-ordersummary-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dwt-ordersummary-thumb$"/>
+            </image-group>
+            <image-group view-type="tablet-product-detail" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwt-product-detail$"/>
+                <image path="0133445380012NEW_02_004?$dwt-product-detail$"/>
+                <image path="0133445380012NEW_03_004?$dwt-product-detail$"/>
+                <image path="0133445380012NEW_00_004?$dwt-product-detail$"/>
+            </image-group>
+            <image-group view-type="tablet-product-list" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwt-product-list$"/>
+                <image path="0133445380012NEW_02_004?$dwt-product-list$"/>
+                <image path="0133445380012NEW_03_004?$dwt-product-list$"/>
+                <image path="0133445380012NEW_00_004?$dwt-product-list$"/>
+            </image-group>
+            <image-group view-type="tablet-product-thumb" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dwt-product-thumb$"/>
+                <image path="0133445380012NEW_02_004?$dwt-product-thumb$"/>
+                <image path="0133445380012NEW_03_004?$dwt-product-thumb$"/>
+                <image path="0133445380012NEW_00_004?$dwt-product-thumb$"/>
+            </image-group>
+            <image-group view-type="wishlist-email" variation-value="004">
+                <image path="0133445380012NEW_01_004?$dw-wishlist-email$"/>
+                <image path="0133445380012NEW_02_004?$dw-wishlist-email$"/>
+                <image path="0133445380012NEW_03_004?$dw-wishlist-email$"/>
+                <image path="0133445380012NEW_00_004?$dw-wishlist-email$"/>
+            </image-group>
+        </images>
+        <brand>Bullhead Denim Co</brand>
+        <search-placement>6</search-placement>
+        <search-rank>3</search-rank>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="activeImageColorCodes">|004|</custom-attribute>
+            <custom-attribute attribute-id="brandCode">3</custom-attribute>
+            <custom-attribute attribute-id="breakoutColorsFlag">false</custom-attribute>
+            <custom-attribute attribute-id="care" xml:lang="x-default">Machine washable</custom-attribute>
+            <custom-attribute attribute-id="channelAdvisorEnabled">true</custom-attribute>
+            <custom-attribute attribute-id="channelAdvisorSendMarketplace">true</custom-attribute>
+            <custom-attribute attribute-id="classCode">0133</custom-attribute>
+            <custom-attribute attribute-id="className">M BASIC CASUAL PANTS</custom-attribute>
+            <custom-attribute attribute-id="cybermon" xml:lang="x-default">On Sale</custom-attribute>
+            <custom-attribute attribute-id="department" xml:lang="x-default">M BOTTOMS</custom-attribute>
+            <custom-attribute attribute-id="departmentCode">002</custom-attribute>
+            <custom-attribute attribute-id="disableNew">false</custom-attribute>
+            <custom-attribute attribute-id="division">MENS</custom-attribute>
+            <custom-attribute attribute-id="divisionCode">01</custom-attribute>
+            <custom-attribute attribute-id="doNotAssignCategories">false</custom-attribute>
+            <custom-attribute attribute-id="exclusive">false</custom-attribute>
+            <custom-attribute attribute-id="fabric" xml:lang="x-default">60% cotton, 40% polyester</custom-attribute>
+            <custom-attribute attribute-id="feedProcessed">true</custom-attribute>
+            <custom-attribute attribute-id="fiftyone_exportProduct">false</custom-attribute>
+            <custom-attribute attribute-id="fiftyone_whitelist">
+                <value>LT</value>
+                <value>LU</value>
+                <value>LV</value>
+                <value>MC</value>
+                <value>MT</value>
+                <value>MX</value>
+                <value>NL</value>
+                <value>NO</value>
+                <value>NZ</value>
+                <value>PL</value>
+                <value>PT</value>
+                <value>RO</value>
+                <value>RU</value>
+                <value>SA</value>
+                <value>SE</value>
+                <value>SG</value>
+                <value>SI</value>
+                <value>SK</value>
+                <value>TR</value>
+                <value>TW</value>
+                <value>AE</value>
+                <value>AT</value>
+                <value>AU</value>
+                <value>BE</value>
+                <value>BG</value>
+                <value>BR</value>
+                <value>CA</value>
+                <value>CL</value>
+                <value>CN</value>
+                <value>CY</value>
+                <value>CZ</value>
+                <value>DE</value>
+                <value>DK</value>
+                <value>EE</value>
+                <value>ES</value>
+                <value>FI</value>
+                <value>FR</value>
+                <value>GB</value>
+                <value>GR</value>
+                <value>HK</value>
+                <value>HU</value>
+                <value>ID</value>
+                <value>IE</value>
+                <value>IN</value>
+                <value>IT</value>
+                <value>JP</value>
+                <value>KR</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="global-promo-style" xml:lang="x-default">
+                <value>Pants</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="hasMoreColors">true</custom-attribute>
+            <custom-attribute attribute-id="hasPrivateLabel">false</custom-attribute>
+            <custom-attribute attribute-id="imageFile">0133445380012NEW</custom-attribute>
+            <custom-attribute attribute-id="isMarkdown">0</custom-attribute>
+            <custom-attribute attribute-id="isNewtest">false</custom-attribute>
+            <custom-attribute attribute-id="isReg">1</custom-attribute>
+            <custom-attribute attribute-id="isSale">false</custom-attribute>
+            <custom-attribute attribute-id="newScene7Image">false</custom-attribute>
+            <custom-attribute attribute-id="smartItemID">0133445380031</custom-attribute>
+            <custom-attribute attribute-id="style" xml:lang="x-default">
+                <value>Bullhead Jeans</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="style-mens-pants" xml:lang="x-default">
+                <value>Bullhead Pants</value>
+                <value>Slim Chino Pants</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="styleCode">0031</custom-attribute>
+            <custom-attribute attribute-id="styleName">SLIM CHINO- STEEPLE GRAY</custom-attribute>
+            <custom-attribute attribute-id="subdepartment">M CASUAL PANTS</custom-attribute>
+            <custom-attribute attribute-id="subdepartmentCode">0140</custom-attribute>
+            <custom-attribute attribute-id="vendor">EVERWILL CHONG KONG LTD</custom-attribute>
+            <custom-attribute attribute-id="vendorCode">44538</custom-attribute>
+            <custom-attribute attribute-id="viewCount">4</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colorCode" variation-attribute-id="color">
+                    <display-name xml:lang="x-default">Color</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="004">
+                            <display-value xml:lang="x-default">GRAY</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+                <variation-attribute attribute-id="sizeCode" variation-attribute-id="size">
+                    <display-name xml:lang="x-default">Size</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="0280">
+                            <display-value xml:lang="x-default">28W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="0290">
+                            <display-value xml:lang="x-default">29W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="0300">
+                            <display-value xml:lang="x-default">30W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2310">
+                            <display-value xml:lang="x-default">31W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="0320">
+                            <display-value xml:lang="x-default">32W X 30L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2320">
+                            <display-value xml:lang="x-default">32W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="4320">
+                            <display-value xml:lang="x-default">32W X 34L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2340">
+                            <display-value xml:lang="x-default">34W X 32L</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="2360">
+                            <display-value xml:lang="x-default">36W X 32L</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="9941394"/>
+                <variant product-id="9941402"/>
+                <variant product-id="9941410"/>
+                <variant product-id="9941436"/>
+                <variant product-id="9941493"/>
+                <variant product-id="9941501"/>
+                <variant product-id="9941527"/>
+                <variant product-id="9941535"/>
+                <variant product-id="9941550"/>
+            </variants>
+        </variations>
+        <classification-category>mens-pants</classification-category>
+    </product>
+
+    <category-assignment category-id="bullhead-mens-pants" product-id="0133445380012"/>
+
+    <category-assignment category-id="mens-pants" product-id="0133445380012">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+
+    <category-assignment category-id="mens-50-and-under" product-id="0133445380012"/>
+
+    <category-assignment category-id="mens-chino-pants" product-id="0133445380012"/>
+
+    <category-assignment category-id="bullhead-denim-co-mens-slim-chino" product-id="0133445380012"/>
+
+</catalog>

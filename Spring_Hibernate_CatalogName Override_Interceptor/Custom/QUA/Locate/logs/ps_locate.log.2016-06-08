@@ -1,0 +1,125 @@
+Jun 08 2016 14:54:53,896 [main] ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11ba7f] to prepare test instance [com.pacsun.submitorder.builder.OrderRequestBuilderTest@1eb0edd]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderHeaderDaoImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.pacsun.submitorder.dao.impl.OrderHeaderDaoImpl.sessionFactory; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder] for bean with name 'orderRequestTransactionsBuilder' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.hibernate.SessionFactory com.pacsun.submitorder.dao.impl.OrderHeaderDaoImpl.sessionFactory; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder] for bean with name 'orderRequestTransactionsBuilder' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 41 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder] for bean with name 'orderRequestTransactionsBuilder' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1327)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1396)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:382)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:361)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:999)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 43 more
+Caused by: java.lang.ClassNotFoundException: com.pacsun.submitorder.builder.OrderRequestTransactionsBuilder
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:236)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:392)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1348)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1319)
+	... 52 more
+Jun 08 2016 14:56:05,627 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 08 2016 14:56:05,637 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 08 2016 14:56:05,638 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 08 2016 14:56:05,640 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 08 2016 14:57:02,327 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 08 2016 14:57:02,339 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 08 2016 14:57:02,350 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 08 2016 14:57:02,356 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 08 2016 15:04:11,658 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 08 2016 15:04:11,667 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 08 2016 15:04:11,669 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 08 2016 15:04:11,670 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 08 2016 15:09:07,106 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 08 2016 15:09:07,116 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 08 2016 15:09:07,125 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 08 2016 15:09:07,129 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 08 2016 15:09:45,177 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 08 2016 15:09:45,186 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 08 2016 15:09:45,188 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 08 2016 15:09:45,189 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 08 2016 15:10:38,642 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 08 2016 15:10:38,655 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 08 2016 15:10:38,669 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 08 2016 15:10:38,674 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 08 2016 15:14:15,873 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 08 2016 15:14:15,882 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 08 2016 15:14:15,885 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 08 2016 15:14:15,886 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 08 2016 15:15:07,657 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 08 2016 15:15:07,669 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 08 2016 15:15:07,681 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 08 2016 15:15:07,686 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 08 2016 15:17:05,158 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 08 2016 15:17:05,166 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 08 2016 15:17:05,168 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 08 2016 15:17:05,170 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 08 2016 15:17:45,896 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 08 2016 15:17:45,908 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 08 2016 15:17:45,920 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 08 2016 15:17:45,926 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory
+Jun 08 2016 15:22:29,561 [main]  INFO - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Jun 08 2016 15:22:29,569 [main]  INFO - HHH000412: Hibernate Core {4.0.1.Final}
+Jun 08 2016 15:22:29,571 [main]  INFO - HHH000206: hibernate.properties not found
+Jun 08 2016 15:22:29,573 [main]  INFO - HHH000021: Bytecode provider name : javassist
+Jun 08 2016 15:23:16,953 [main]  INFO - HHH000400: Using dialect: org.hibernate.dialect.DB2400Dialect
+Jun 08 2016 15:23:16,964 [main]  INFO - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Jun 08 2016 15:23:16,977 [main]  INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jun 08 2016 15:23:16,983 [main]  INFO - HHH000397: Using ASTQueryTranslatorFactory

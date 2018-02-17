@@ -1,0 +1,3 @@
+Jul 20 2016 10:15:23,055 [Thread1]  INFO - Locate submit order process has started.
+Jul 20 2016 10:15:24,662 [Thread1] ERROR - Error: OrderId=90070267, PickTicketCode=DTH, FulfillmentLocation=899       
+Jul 20 2016 10:15:24,662 [Thread1]  INFO - Locate submit order process has completed. 0 order(s) have processed. 0 error(s) occurred.

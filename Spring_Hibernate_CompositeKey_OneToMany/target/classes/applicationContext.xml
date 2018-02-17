@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/beans    
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<context:annotation-config />
+	<tx:annotation-driven />
+
+	<context:component-scan base-package="com.pacsun" />
+	
+	<!-- Properties -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:ps_db400.properties</value>
+				<value>classpath:ps_locate.properties</value>
+				<value>classpath:ps_email.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${as400.driver}" />
+		<property name="url" value="${as400.url}" />
+		<property name="username" value="${as400.user}" />
+		<property name="password" value="${as400.password}"/>
+	</bean>
+	
+	<bean id="hibernateInterceptor" class="com.pacsun.locate.interceptor.HibernateInterceptor">
+		<property name="catalog" value="${as400.order.interface.file.library}" />
+ 	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="entityInterceptor">
+        	<ref bean="hibernateInterceptor"/>
+    	</property>
+		<property name="packagesToScan" value="com.pacsun.locate.model" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.DB2400Dialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+		<property name="annotatedClasses">
+			<list>
+				<value>com.pacsun.locate.model.OrderHeader</value>
+				<value>com.pacsun.locate.model.OrderDetail</value>
+				<value>com.pacsun.locate.model.OpOrderStatus</value>
+				<value>com.pacsun.locate.model.LocateOrderStatus</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="locateProxy" class="com.microsretail.Locate.LocateProxy" />
+	<bean id="submitOrderRequestMessageHeader" class="com.microsretail.Locate.SubmitOrderRequestMessageHeaderTypeBean" />
+	<bean id="statusListInquiryRequestMessageHeader" class="com.microsretail.Locate.StatusListInquiryRequestMessageHeaderTypeBean" />
+	<bean id="statusUpdateRequestMessageHeader" class="com.microsretail.Locate.StatusUpdateRequestMessageHeaderTypeBean" />
+	<bean id="orderUpdateRequestMessageHeaderTypeBean" class="com.microsretail.Locate.OrderUpdateRequestMessageHeaderTypeBean" />  
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+		p:sessionFactory-ref="sessionFactory">
+	</bean>
+</beans>

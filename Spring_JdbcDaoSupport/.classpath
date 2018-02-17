@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="src" path="testsrc"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jaxb-xjc.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-aop-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-beans-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-context-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-context-support-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-core-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-expression-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-jdbc-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-orm-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-test-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-4.0.2.RELEASE/spring-tx-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jt400.jar"/>
+	<classpathentry kind="lib" path="Custom/QUA/Demandware/storeInventory/feeds"/>
+	<classpathentry kind="lib" path="Custom/QUA/Demandware/storeInventory/logs"/>
+	<classpathentry kind="lib" path="Custom/QUA/Demandware/storeInventory/properties"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jsch-0.1.50.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/joda-time-2.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

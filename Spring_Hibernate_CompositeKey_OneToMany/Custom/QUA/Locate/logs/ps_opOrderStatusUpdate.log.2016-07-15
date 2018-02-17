@@ -1,0 +1,66 @@
+Jul 15 2016 17:01:56,904 [main]  INFO - OP Order Status Update process has started.
+Jul 15 2016 17:01:58,867 [main] ERROR - com.pacsun.locate.process.OpOrderStatusUpdateRequestor : Error in OpOrderStatusUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.statusListRequest(LocateServiceSoapBindingStub.java:1480)
+	at com.microsretail.Locate.LocateProxy.statusListRequest(LocateProxy.java:92)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callStatusListRequest(WebServiceInvoker.java:40)
+	at com.pacsun.locate.process.OpOrderStatusUpdateProcess.run(OpOrderStatusUpdateProcess.java:49)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.run(OpOrderStatusUpdateRequestor.java:32)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.main(OpOrderStatusUpdateRequestor.java:17)
+
+Jul 15 2016 17:01:58,877 [main] ERROR - java.lang.Exception: com.pacsun.locate.process.OpOrderStatusUpdateRequestor : Error in OpOrderStatusUpdateProcess requestor.
+AxisFault
+ faultCode: {http://xml.apache.org/axis/}HTTP
+ faultSubcode: 
+ faultString: (0)null
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{}:return code:  0
+
+	{http://xml.apache.org/axis/}HttpErrorCode:0
+
+(0)null
+	at org.apache.axis.transport.http.HTTPSender.readFromSocket(HTTPSender.java:744)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:144)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.microsretail.Locate.LocateServiceSoapBindingStub.statusListRequest(LocateServiceSoapBindingStub.java:1480)
+	at com.microsretail.Locate.LocateProxy.statusListRequest(LocateProxy.java:92)
+	at com.pacsun.locate.webservice.invoker.WebServiceInvoker.callStatusListRequest(WebServiceInvoker.java:40)
+	at com.pacsun.locate.process.OpOrderStatusUpdateProcess.run(OpOrderStatusUpdateProcess.java:49)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.run(OpOrderStatusUpdateRequestor.java:32)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.main(OpOrderStatusUpdateRequestor.java:17)
+
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.run(OpOrderStatusUpdateRequestor.java:37)
+	at com.pacsun.locate.process.OpOrderStatusUpdateRequestor.main(OpOrderStatusUpdateRequestor.java:17)
+

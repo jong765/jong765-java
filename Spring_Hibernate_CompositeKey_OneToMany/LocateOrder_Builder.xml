@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LocateOrder" default="LocateOrder" basedir=".">
+	<target name="LocateOrder" description="Locate Order Broker interface">
+		<jar jarfile="C:\eclipse workspace\LocateOrder\deploy\microsretail_locate.jar" includes=
+	                  "**/com/microsretail/Locate/*.class" basedir="target/classes" />
+		<jar jarfile="C:\eclipse workspace\LocateOrder\deploy\ps_locate.jar" includes="**/com/pacsun/locate/bean/*.class,
+			          **/com/pacsun/locate/builder/*.class,
+			          **/com/pacsun/locate/constants/*.class,
+			          **/com/pacsun/locate/dao/*.class,
+					  **/com/pacsun/locate/dao/impl/*.class,
+			          **/com/pacsun/locate/dto/*.class,
+					  **/com/pacsun/locate/handler/*.class,
+					  **/com/pacsun/locate/interceptor/*.class,
+					  **/com/pacsun/locate/model/*.class,
+					  **/com/pacsun/locate/process/*.class,
+					  **/com/pacsun/locate/service/*.class,
+					  **/com/pacsun/locate/service/impl/*.class,
+			          **/com/pacsun/locate/webservice/invoker/*.class,
+			          **/com/pacsun/util/*.class" basedir="target/classes" />
+	</target>
+</project>
