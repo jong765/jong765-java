@@ -11,7 +11,11 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.apache.log4j.Logger;
+
 import com.pacsun.constants.EmailConstants;
+
+
 
 public class HtmlEmail implements EmailConstants {
 
@@ -23,17 +27,21 @@ public class HtmlEmail implements EmailConstants {
 	private InternetAddress[] addressTo;
 	private String content;
 
-	public HtmlEmail(Properties properties, String emailContent) {
+	String errorMessage;
+
+	private static final Logger log = Logger.getLogger(HtmlEmail.class);
+
+	public HtmlEmail(Properties properties, String emailSubject, String emailContent) throws Exception {
 		this.setSmtpHost(properties.getProperty(SMTP_HOST));
 		this.setMailSmtpAuth(properties.getProperty(MAIL_SMTP_AUTH));
 		this.setSmtpUser(properties.getProperty(SMTP_USER));
 		this.setSmtpPassword(properties.getProperty(SMTP_PASSWORD));
-		this.setEmailSubject(properties.getProperty(EMAIL_SUBJECT));
+		this.setEmailSubject(emailSubject);
 		this.setAddressTo(properties.getProperty(EMAIL_RECIPIENTS));
 		this.content = emailContent;
 	}
 
-	public void sendEmail() {
+	public void sendEmail() throws Exception {
 
 		Properties properties = System.getProperties();
 		properties.setProperty("mail.smtp.host", smtpHost);
@@ -54,13 +62,12 @@ public class HtmlEmail implements EmailConstants {
 			message.setContent(this.getContent(), "text/html");
 
 			Transport.send(message);
-			System.out.println("Email sent....");
-		} catch (MessagingException ex) {
-			ex.printStackTrace();
+		} catch (MessagingException e) {
+			throw new Exception(e);
 		}
 	}
 
-	public void setAddressTo(String emailRecipients) {
+	private void setAddressTo(String emailRecipients) throws Exception {
 		StringTokenizer st = new StringTokenizer(emailRecipients, ",");
 		this.addressTo = new InternetAddress[st.countTokens()];
 		int i = 0;
@@ -69,12 +76,12 @@ public class HtmlEmail implements EmailConstants {
 			while (st.hasMoreElements()) {
 				this.addressTo[i++] = new InternetAddress((String) st.nextElement());
 			}
-		} catch (Exception ex) {
-			ex.printStackTrace();
+		} catch (Exception e) {
+			throw new Exception(e);
 		}
 	}
 
-	public String getContent() {
+	private String getContent() {
 		return content;
 	}
 
@@ -82,43 +89,43 @@ public class HtmlEmail implements EmailConstants {
 		this.content = content;
 	}
 
-	public String getSmtpHost() {
+	private String getSmtpHost() {
 		return smtpHost;
 	}
 
-	public void setSmtpHost(String smtpHost) {
+	private void setSmtpHost(String smtpHost) {
 		this.smtpHost = smtpHost;
 	}
 
-	public String getMailSmtpAuth() {
+	private String getMailSmtpAuth() {
 		return mailSmtpAuth;
 	}
 
-	public void setMailSmtpAuth(String mailSmtpAuth) {
+	private void setMailSmtpAuth(String mailSmtpAuth) {
 		this.mailSmtpAuth = mailSmtpAuth;
 	}
 
-	public String getSmtpUser() {
+	private String getSmtpUser() {
 		return smtpUser;
 	}
 
-	public void setSmtpUser(String smtpUser) {
+	private void setSmtpUser(String smtpUser) {
 		this.smtpUser = smtpUser;
 	}
 
-	public String getSmtpPassword() {
+	private String getSmtpPassword() {
 		return smtpPassword;
 	}
 
-	public void setSmtpPassword(String smtpPassword) {
+	private void setSmtpPassword(String smtpPassword) {
 		this.smtpPassword = smtpPassword;
 	}
 
-	public String getEmailSubject() {
+	private String getEmailSubject() {
 		return emailSubject;
 	}
 
-	public void setEmailSubject(String emailSubject) {
+	private void setEmailSubject(String emailSubject) {
 		this.emailSubject = emailSubject;
 	}
 
