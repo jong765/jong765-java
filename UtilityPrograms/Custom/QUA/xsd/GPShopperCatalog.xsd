@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="catalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="categories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="category">
+                <xs:complexType>
+                  <xs:attribute name="id" use="required"/>
+                  <xs:attribute name="name" use="required"/>
+                  <xs:attribute name="parent"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="variants"/>
+        <xs:element ref="products"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="variants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="variant"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="variant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="regular-price"/>
+        <xs:element minOccurs="0" ref="sale-price"/>
+        <xs:element minOccurs="0" ref="upc"/>
+        <xs:element minOccurs="0" ref="markdown-message"/>
+        <xs:element minOccurs="0" ref="promo-message"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="variant-attribute"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required"/>
+      <xs:attribute name="parent" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="regular-price" type="xs:string"/>
+  <xs:element name="sale-price" type="xs:string"/>
+  <xs:element name="upc" type="xs:string"/>
+  <xs:element name="markdown-message" type="xs:string"/>
+  <xs:element name="promo-message" type="xs:string"/>
+  <xs:element name="variant-attribute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="value"/>
+        <xs:element minOccurs="0" ref="image-set"/>
+        <xs:element minOccurs="0" ref="swatch"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="value" type="xs:string"/>
+  <xs:element name="image-set">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="image">
+          <xs:complexType>
+            <xs:attribute name="url" use="required"/>
+            <xs:attribute name="order"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="swatch">
+    <xs:complexType>
+      <xs:attribute name="url" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="products">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="product"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="product-url"/>
+        <xs:element ref="long-description"/>
+        <xs:element ref="short-description"/>
+        <xs:element ref="brand"/>
+        <xs:element ref="keywords"/>
+        <xs:element ref="attribute-definitions"/>
+        <xs:element minOccurs="0" ref="markdown-message"/>
+        <xs:element minOccurs="0" ref="promo-message"/>
+        <xs:element name="categories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="category">
+                <xs:complexType>
+                  <xs:attribute name="id" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="product-image"/>
+        <xs:element ref="alt-images"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="promo"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product-url" type="xs:string"/>
+  <xs:element name="long-description" type="xs:string"/>
+  <xs:element name="short-description" type="xs:string"/>
+  <xs:element name="brand" type="xs:string"/>
+  <xs:element name="keywords" type="xs:string"/>
+  <xs:element name="attribute-definitions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="attribute-definition"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="attribute-definition" type="xs:string"/>
+  <xs:element name="product-image">
+    <xs:complexType>
+      <xs:attribute name="url" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alt-images">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="image">
+          <xs:complexType>
+            <xs:attribute name="url" use="required"/>
+            <xs:attribute name="order" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="promo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="promo-type"/>
+        <xs:element ref="promo-message"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="promo-type" type="xs:string"/>
+</xs:schema>

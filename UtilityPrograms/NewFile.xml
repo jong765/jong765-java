@@ -1,0 +1,119 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:loc="http://microsretail.com/Locate">
+	<soapenv:Header />
+	<soapenv:Body>
+		<loc:SubmitOrder>
+			<loc:order_request_message>
+				<message_header xaction_type="INSERT"
+					xaction_response="1" message_type="SubmitOrder">
+					<datetime>2013-12-03</datetime>
+					<version>5.0</version>
+					<source>0060000778200100001</source>
+					<destination>LOCATE</destination>
+				</message_header>
+				<message_body>
+					<transactions>
+						<transaction_header transaction_no="00007782"
+							request_id="" order_id="7782" transaction_type_id="DELIVERY">
+							<transaction_date>2013-12-03</transaction_date>
+							<employee_id>CWS</employee_id>
+							<transaction_subtotal>10.0</transaction_subtotal>
+							<transaction_tax>0.2</transaction_tax>
+							<transaction_total>10.2</transaction_total>
+							<special_instructions>13058|7|UPS UPGRADE NO EXTRA CHARGE
+							</special_instructions>
+							<transaction_status>new_order</transaction_status>
+							<transaction_channel>1</transaction_channel>
+							<sold_to_customer>
+								<name>
+									<prefix>MS.</prefix>
+									<first>SARAH</first>
+									<middle>R</middle>
+									<last>BROWN</last>
+									<suffix></suffix>
+								</name>
+								<address>
+									<address1>1800 WEST PARK DRIVE</address1>
+									<address2></address2>
+									<city>WESTBOROUGH</city>
+									<province>MA</province>
+									<postal>01581</postal>
+									<email>ekaplan@commercialware.com</email>
+									<country>USA</country>
+								</address>
+							</sold_to_customer>
+							<store_location location_cd="10" system_cd="5" />
+							<transaction_details>
+								<transaction_detail line_item_no="1">
+									<location_cd>317</location_cd>
+									<system_cd>cws</system_cd>
+									<item_id>KABNOSKU </item_id>
+									<qty>1</qty>
+									<unit_price>10.0</unit_price>
+									<item_upc_cd>abcdefghijklmnopqrstuvwxyz</item_upc_cd>
+									<item_ean_cd>EANCUMIN</item_ean_cd>
+									<order_line_extended_freight>
+										1.12345
+									</order_line_extended_freight>
+										<order_line_customization_charge>
+											2.12
+										</order_line_customization_charge>
+											<order_line_gift_wrap>Y</order_line_gift_wrap>
+											<order_line_ship_alone>N</order_line_ship_alone>
+											<order_line_ship_weight>3.1255</order_line_ship_weight>
+											<order_line_message>This is an
+												order_line_
+												message
+											</order_line_message>
+											<customizations>
+												<customization>
+													<customization_code>XFirst</customization_code>
+													<customization_message>first
+														customization
+														message
+													</customization_message>
+												</customization>
+												<customization>
+													<customization_code>ASecond</customization_code>
+													<customization_message>second
+														customization
+														message
+													</customization_message>
+												</customization>
+											</customizations>
+											<ship_to>
+												<name>
+													<prefix>MS.</prefix>
+													<first>SARAH</first>
+													<middle>R</middle>
+													<last>BROWN</last>
+													<suffix></suffix>
+												</name>
+												<address>
+													<attention>MS. SARAH BROWN</attention>
+													<address1>1800 WEST PARK DRIVE</address1>
+													<address2></address2>
+													<address4>13058</address4>
+													<city>WESTBOROUGH</city>
+													<province>MA</province>
+													<postal>01581</postal>
+													<country>USA</country>
+												</address>
+											</ship_to>
+											<taxes>
+												<tax description="Tax" line_item_no="1">
+													<amount>0.20000</amount>
+												</tax>
+											</taxes>
+											<line_item_status>new_order</line_item_status>
+											<special_instructions></special_instructions>
+								</transaction_detail>
+							</transaction_details>
+							<under_review>N</under_review>
+						</transaction_header>
+					</transactions>
+				</message_body>
+			</loc:order_request_message>
+		</loc:SubmitOrder>
+	</soapenv:Body>
+</soapenv:Envelope>

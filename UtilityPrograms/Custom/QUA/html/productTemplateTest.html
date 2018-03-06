@@ -1,0 +1,69 @@
+	<!--product-->
+	<table width="600" border="0" align="center" cellpadding="0"
+		cellspacing="0" class="width320" style="margin: 0px auto;">
+		<tr>
+			<td
+				style="padding-bottom: 32px; padding-top: 10px; border-bottom: 1px solid #eeeeee;">
+				<table class="width280" width="568" border="0" align="center"
+					cellpadding="0" cellspacing="0" style="margin: 0px auto;">
+
+					<tr>
+						<!--smarty tag image -->
+						<td align="left" valign="top" width="80"
+							style="padding-top: 0px; padding-bottom: 0px;">
+								<img src="http://{$orders.prodimglink}"
+							alt="" width="80" style="border: none;" border="0" />
+						</td>
+
+						<!--product copy-->
+						<td align="left" valign="top" style="padding-left: 18px;">
+							<table width="100%" border="0" align="center" cellpadding="0"
+								cellspacing="0">
+								<!--Title-->
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font- size: 18px; line-height: 25px; color: #000000; padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding- right: 0px;">{$orders.brand}</td>
+								</tr>
+								<!--Description-->
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font- size: 18px; line-height: 25px; color: #000000; padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding- right: 0px;">{$orders.producttitle}</td>
+								</tr>
+								<!--Price-->
+								<!--Color-->
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font- size: 18px; line-height: 25px; color: #000000; padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding- right: 0px;">Color:
+										{$orders.color}</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font- size: 18px; line-height: 25px; color: #000000; padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding- right: 0px;">Size:
+										{$orders.size}</td>
+								</tr>
+								<!--Quantity-->
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font- size: 18px; line-height: 25px; color: #000000; padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding- right: 0px;">Quantity:
+										{$orders.quantity}</td>
+								</tr>
+								<!--Item SKU-->
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font- size: 18px; line-height: 25px; color: #000000; padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding- right: 0px;">SKU:
+										{$orders.itemsku}</td>
+								</tr>
+								<!--Gift Wrap-->
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font- size: 18px; line-height: 25px; color: #000000; padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding- right: 0px;">{$orders.giftwrap}
+										: {$orders.giftwrap_qty}</td>
+								</tr>
+							</table>
+						</td>
+
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>

@@ -1,0 +1,12 @@
+DROP TABLE JKIM2.JKCustomer;
+CREATE TABLE JKIM2.JKCustomer (
+    UUID    VARCHAR(50),
+	Login	VARCHAR(50),
+	FirstName	VARCHAR(50),
+	LastName	VARCHAR(50),
+	Email	VARCHAR(50),
+	Zip	VARCHAR(20),
+	GigyaUId	VARCHAR(50)
+);
+SELECT	*
+FROM	JKIM2.JKCustomer;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry including="**/*.java" kind="src" path="resources"/>
+	<classpathentry kind="src" path="testsrc"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/joda-time-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jt400.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jaxb-xjc.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-3.2.3.RELEASE/spring-jdbc-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-3.2.3.RELEASE/spring-context-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-3.2.3.RELEASE/spring-core-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-3.2.3.RELEASE/spring-tx-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-3.2.3.RELEASE/spring-beans-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/spring-framework-3.2.3.RELEASE/spring-expression-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/httpclient-4.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/httpcore-4.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jdom-1.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/mail.jar"/>
+	<classpathentry kind="lib" path="Custom/QUA/properties"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jsch-0.1.50.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/org-apache-commons-codec.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/PS_FDMS.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/json_simple-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/icu4j-4.8.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jackson-databind-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jackson-core-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/jackson-annotations-2.2.3.jar"/>
+	<classpathentry kind="lib" path="Custom/QUA/xml"/>
+	<classpathentry kind="lib" path="C:/eclipse/pacsun/lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

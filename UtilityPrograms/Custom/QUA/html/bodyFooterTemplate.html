@@ -1,0 +1,217 @@
+	<!--shipping-->
+	<table width="600" border="0" align="center" cellpadding="0"
+		cellspacing="0" class="width320" style="margin: 0px auto;">
+		<tr>
+			<td style="padding-bottom: 32px; border-bottom: 1px solid #eeeeee;">
+				<table class="width280" width="568" border="0" align="center"
+					cellpadding="0" cellspacing="0" style="margin: 0px auto;">
+					<tr>
+						<td align="left"
+							style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 20px; line-height: 30px; color: #000000; padding-top: 15px; padding-bottom: 10px;">Shipped
+							to</td>
+					</tr>
+					<tr>
+						<td align="left"
+							style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; color: #999999; text-decoration: none; padding-top: 0px; padding-bottom: 0px;">
+							{$shipto_fname} {$shippedto_lname} <br /> {$shipto_address1}
+							{$shipto_street} <br /> {if $shipto_address2} {$shipto_address2}
+							<br /> {/if} {$shipto_city}, {$shipto_state} {$shipto_zip} <br />
+							{$shipto_country}
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<!--billing-->
+	<table width="600" border="0" align="center" cellpadding="0"
+		cellspacing="0" class="width320" style="margin: 0px auto;">
+		<tr>
+			<td style="padding-bottom: 32px;">
+				<table class="width280" width="568" border="0" align="center"
+					cellpadding="0" cellspacing="0" style="margin: 0px auto;">
+					<tr>
+						<td align="left"
+							style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 20px; line-height: 30px; color: #000000; padding-top: 15px; padding-bottom: 10px;">Tracking</td>
+					</tr>
+					<tr>
+						<td align="left"
+							style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; color: #999999; padding-top: 0px; padding-bottom: 0px;">
+							{$shipping_carrier} <br /> {$shipping_method} <br /> Tracking
+							Number: <a
+							href="http://{$trackshipmentbutton1}&{$trackshipmentbutton2}{$trackingnum}"
+							style="color: #33cccc; font-weight: normal;">{$trackingnum}</a> <br />
+							Please allow 24 hours to track your shipment. If your order
+							contains more than one item, it may ship in multiple packages.
+							You will receive another email to confirm shipment of the
+							remaining item(s) in your order when shipped.
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table width="600" border="0" align="center" cellpadding="0"
+		cellspacing="0" class="width320" style="margin: 0px auto;">
+		<tr>
+			<td style="padding-bottom: 32px; border-bottom: 1px solid #eeeeee;">
+				<table class="width280" width="568" border="0" align="center"
+					cellpadding="0" cellspacing="0" style="margin: 0px auto;">
+
+					<tr>
+						<!--smarty tag image -->
+						<td align="left" valign="top" width="80"
+							style="padding-top: 0px; padding-bottom: 0px;"><a
+							href="http://www.pacsun.com/content/pacsun-app,default,pg.html">
+								<img
+								src="http://echo.bluehornet.com/static/pacsun/00782/pacsun-bug.png"
+								alt="PacSun" width="80" style="border: none;" border="0" />
+						</a></td>
+
+						<!--product copy-->
+						<td align="left" valign="top" style="padding-left: 18px;">
+							<table width="100%" border="0" align="center" cellpadding="0"
+								cellspacing="0">
+								<!--Title-->
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font- size: 24px; line-height: 25px; color: #000000; padding-top: 0px; padding-bottom: 8px; padding-left: 0; padding- right: 0px;">
+										<a
+										href="http://www.pacsun.com/content/pacsun-app,default,pg.html"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 24px; line-height: 25px; color: #000000; color: #000000; text- decoration: none;">Download
+											the App and get rewarded!</a>
+									</td>
+								</tr>
+								<!--Description-->
+								<tr>
+									<td align="left" valign="top"
+										style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font- size: 18px; line-height: 22px; color: #999999; padding-top: 0px; padding-bottom: 0px; padding-left: 0; padding- right: 60px;">
+										Receive a $5 reward for signing up plus 10 points for every
+										dollar spent.</td>
+								</tr>
+							</table>
+						</td>
+
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<!--  FOOTER SECTION-->
+	<table class="width320" width="600" border="0" align="center"
+		cellpadding="0" cellspacing="0" style="margin: 0px auto;">
+		<tr>
+			<td style="padding-bottom: 36px;">
+				<table width="100%" border="0" align="center" cellpadding="0"
+					cellspacing="0" style="margin: 0 auto;">
+					<!--TWO COLUMN WITH PADDING-->
+
+					<tr>
+						<td style="padding-top: 36px; padding-bottom: 36px;">
+							<table class="width280" width="160" border="0" cellspacing="0"
+								cellpadding="0" align="center" style="margin: 0 auto;">
+								<tr>
+									<td class="footerIcons block">
+										<table width="200" border="0" cellspacing="0" cellpadding="0"
+											align="center">
+											<tr>
+												<td align="center" class="footerSocial"><a
+													href="https://www.instagram.com/pacsun"> <img
+														src="http://echo.bluehornet.com/static/pacsun/00782/i.png"
+														alt="Instagram" width="40" height="40"
+														style="border: none;"></a></td>
+												<td align="center" class="footerSocial"><a
+													href="https://twitter.com/pacsun"> <img
+														src="http://echo.bluehornet.com/static/pacsun/00782/t.png"
+														alt="Twitter" width="40" height="40" style="border: none;"></a>
+												</td>
+												<td align="center" class="footerSocial"><a
+													href="https://wanelo.com/pacsun"> <img
+														src="http://echo.bluehornet.com/static/pacsun/00782/squars.png"
+														alt="Wanelo" width="40" height="40" style="border: none;"></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td class="footerIcons block">
+										<table width="132" border="0" cellspacing="0" cellpadding="0"
+											align="center">
+											<tr>
+												<td align="center" class="footerSocial"><a
+													href="https://www.pinterest.com/pacsun"> <img
+														src="http://echo.bluehornet.com/static/pacsun/00782/p.png"
+														alt="Pinterest" width="40" height="40"
+														style="border: none;"></a></td>
+
+												<td align="center" class="footerSocial"><a
+													href="https://www.facebook.com/pacsun"> <img
+														src="http://echo.bluehornet.com/static/pacsun/00782/f.png"
+														alt="Facebook" width="40" height="40"
+														style="border: none;"></a></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<table class="width280" width="600" border="0" align="center"
+								cellpadding="0" cellspacing="0" style="margin: 0px auto;">
+								<tbody>
+									<tr>
+
+										<td width="290" valign="top" class="width280 block"
+											style="padding-bottom: 36px; margin: 0 auto;">
+											<table class="width280" align="center" width="400" border="0"
+												cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+
+												<tr>
+													<td align="center"
+														style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line- height: 22px; color: #cccccc; padding-top: 0; padding-bottom: 14px; padding-left: 0; padding-right: 0; text-align: center; margin: 0auto;">
+														Having trouble viewing this email? <br /> <a
+														href="http://www.pacsun.com/order-status"
+														style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line- height: 22px; color: #cccccc; text-decoration: underline;">View
+															in Browser</a>
+													</td>
+												</tr>
+												<tr>
+													<td align="center"
+														style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; line- height: 22px; color: #cccccc; padding-top: 0; padding-bottom: 14px; padding-left: 0; padding-right: 0; text-align: center; margin: 0auto;">
+														This email was sent to you by PacSun. <br /> To ensure
+														delivery to your inbox, please add <a
+														href="mailto:pacsunonline@pacsun.com"
+														style="font- family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #cccccc; text-decoration: underline;">pacsunonline@pacsun.com</a>
+														to your address book.
+													</td>
+												</tr>
+
+												<tr>
+													<td align="center"
+														style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; line- height: 22px; color: #cccccc; text-decoration: none; padding-top: 0; padding-bottom: 14px; padding-left: 0; padding- right: 0; text-align: center; margin: 0 auto;">
+														PacSun <br /> 3450 E. Miraloma Avenue <br /> Anaheim, CA
+														92806
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+		<!--END OF CONTENT-->
+	</table>
+</body>
+</html>
