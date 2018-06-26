@@ -32,7 +32,7 @@ public class TestProgram {
 					if (e.getCause() instanceof ConnectTimeoutException
 							|| e.getCause() instanceof SocketTimeoutException
 							|| e.getCause() instanceof SocketException) {
-						logger.fatal(this.getClass().getName() + " : "
+						logger.error(this.getClass().getName() + " : "
 								+ e.getMessage() + "\n"
 								+ StackTrace.getStackTrace(e));
 						connectionTimedout = true;

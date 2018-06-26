@@ -1,0 +1,3 @@
+#Reason codes
+PAC01=Invalid action code
+PAC02=SAX parse exception
