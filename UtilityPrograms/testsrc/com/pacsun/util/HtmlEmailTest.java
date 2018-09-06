@@ -50,9 +50,9 @@ public class HtmlEmailTest implements EmailConstants {
 		String filePath4 = "Custom/QUA/html/bodyFooterTemplate.html";
 		String fileContent = FileUtils.readFile(filePath1) + FileUtils.readFile(filePath2)
 				+ FileUtils.readFile(filePath3) + FileUtils.readFile(filePath4);
-		String emailSubject = "Test subject";
+		String emailSubject = "Vertex Tax Investigation";
 		// String emailContent = fileContent;
-		String emailContent = "Don't worry. I pay for everyone. I love you all long time.";
+		String emailContent = "John, are you sure you don't care for now?";
 
 		htmlEmail = new HtmlEmail(properties, emailSubject, emailContent);
 
