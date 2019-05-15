@@ -24,10 +24,10 @@ public class SftpUtilTest {
 
 	@Before
 	public void setUp() throws Exception {
-		String sftpHost = "files.hingeto.com";
-		String sftpUser = "pacsun-staging";
-		String sftpPassword = "DropShip2017!";
-		String sftpDir = "misc";
+		String sftpHost = "10.60.10.9";
+		String sftpUser = "svc_ps_dw";
+		String sftpPassword = "WZJ3pcOg";
+		String sftpDir = "/mulesoft/ps/dev/dw/in/Catalog";
 		sftpUtil.setSftpHost(sftpHost);
 		sftpUtil.setSftpUser(sftpUser);
 		sftpUtil.setSftpPassword(sftpPassword);
@@ -41,7 +41,7 @@ public class SftpUtilTest {
 	@Test
 	public void testSend() throws Exception {
 		List<File> fileList = new ArrayList<File>();
-		File file = new File("Custom/QUA/ftp/file/Test.txt");
+		File file = new File("Custom/QUA/ftp/file/test.txt");
 		fileList.add(file);
 		// file = new File("Custom/QUA/ftp/file/aatest2.xml");
 		// fileList.add(file);

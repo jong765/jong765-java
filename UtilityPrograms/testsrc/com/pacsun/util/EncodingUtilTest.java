@@ -36,7 +36,7 @@ public class EncodingUtilTest
   @Test
   public void testEncode()
   {
-    String str = "100100082:434b004fd9cd0dcbea807f7ad2ac0889d7bb5751a1a0dca94ccfaebb5fb7f3cadb8be76b2caef864d0f05149a27b7ebd0a5d3635c4555c849f5013c8b210bc70";
+    String str = "jjK1247%";
     System.out.println("Encoded value " + EncodingUtil.encode(str));
   }
   @Test

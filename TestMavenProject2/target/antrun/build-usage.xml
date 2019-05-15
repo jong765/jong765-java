@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="usage"  >
+<target name="usage">
+  <echo message="This is how this target is used!"/>
+</target>
+</project>
