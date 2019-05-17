@@ -7,7 +7,7 @@ public class StringUtil {
 	}
 
 	public static String truncateString(String s, int maxLength) {
-		return s.substring(0, Math.min(s.length(), maxLength)).trim();
+		return s != null ? s.substring(0, Math.min(s.length(), maxLength)).trim() : "";
 	}
 
 }
