@@ -1,0 +1,7 @@
+May 20 2019 15:46:36,708 [main]  INFO - info logged
+May 20 2019 15:47:15,208 [main]  INFO - info logged
+May 20 2019 15:47:15,208 [main] ERROR - error logged
+May 20 2019 15:47:42,835 [main]  INFO - info logged
+May 20 2019 15:47:42,835 [main] ERROR - error logged
+May 20 2019 15:47:42,835 [main]  WARN - warn logged
+May 20 2019 15:47:42,835 [main] FATAL - fatal logged
